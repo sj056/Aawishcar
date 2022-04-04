@@ -210,12 +210,13 @@ text-align: center;
     margin-top: 10px;
 }
 .reviews{
-    background: var(--blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 66px 0;
+    padding-bottom: 8rem;
+    background: #004FCF;
 }
 .reviews>h4{
     font-weight: 700;
@@ -235,48 +236,67 @@ text-align: center;
 .reviews>.container>.row{
     justify-content: space-between;
 }
-.reviews>.container>.row>.col{
+/* crousel */
+.s1{
+    width: 100%;
+}
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}
+.splide__pagination{
+    display: none;
+}
+.review-card-blue,.review-card-black{
     border-radius: 8px;
     padding: 40px 30px;
     color: white;
     max-width: 300px;
 }
-.reviews>.container>.row>.blue{
+.review-card-blue{
     background: #0045B5;
 }
-.reviews>.container>.row>.black{
+.review-card-black{
     background: black;
 }
-.reviews>.container>.row>.col>.stars{
+.review-card-blue>.stars,
+.review-card-black>.stars{
     margin-bottom: 8px;
 }
-.reviews>.container>.row>.col>.stars>img{
+.review-card-black>.stars>img,
+.review-card-blue>.stars>img{
     height: 14px;
     width: auto;
 }
-.reviews>.container>.row>.col>p{
+.review-card-black>p,
+.review-card-blue>p{
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
 }
-.reviews>.container>.row>.col>.profile{
+.review-card-black>.profile,
+.review-card-blue>.profile{
     display: flex;
 }
-.reviews>.container>.row>.col>.profile>img{
+.review-card-blue>.profile>img,
+.review-card-black>.profile>img{
     height: 60px;
     width: 60px;
     border-radius: 100%;
 }
-.reviews>.container>.row>.col>.profile>div{
+.review-card-blue>.profile>div,
+.review-card-black>.profile>div{
 margin-left: 1rem;
 margin-top: 0.4rem;
 }
-.reviews>.container>.row>.col>.profile>div>h6{
+.review-card-blue>.profile>div>h6,
+.review-card-black>.profile>div>h6{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 }
-.reviews>.container>.row>.col>.profile>div>p{
+.review-card-blue>.profile>div>p,
+.review-card-black>.profile>div>p{
     font-weight: 400;
     font-size: 16px;
     line-height: 13px;
@@ -293,6 +313,14 @@ margin-top: 0.4rem;
     margin: 0 1rem;
     cursor: pointer;
 }
+.splide__arrows{
+    position: absolute;
+    bottom: -4rem;
+    right: 2rem;
+    width: 7.5rem;
+}
+
+
 .gallery{
     display: flex;
     flex-direction: column;
@@ -373,4 +401,142 @@ footer>div>.row>.col2>ul>li>.subline{
 .desktopFooterLogo{
 height: 17px;
 text-align: center;
+}
+@media screen and (max-width:1000px) {
+    .header>img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:900px) {
+    .whyAwishcar>div>.row{
+        display: block;
+        width: 20rem;
+        margin: auto;
+        padding: 0 2rem;
+    }
+    .whyAwishcar>.container>.row>.col{
+        margin: 2rem 0;
+    }
+    .highlights>.container>.row{
+        display: block;
+        margin: auto;
+    }
+    .highlights>.container>.row>.col{
+        margin: auto;
+    }
+    .approach>p{
+        text-align: center;
+    }
+    footer{
+        padding: 6rem 1rem;
+    }
+    footer>div>div>div{
+        text-align: start;
+    }
+    .gallery{
+        background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.336) 161.78%), url("./assets/mobile-bg.png"); 
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:focus-visible{
+        outline: none;
+    }
+}
+@media screen and (max-width:528px){
+    .upperStrip{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width:650px){
+    .navbar-brand>img{
+        height: 34px;
+    }
+    .upperStrip{
+        text-align: center;
+    }
+    .upperStrip>h6 {
+        font-size: 0.7rem;
+    }
+    .upperStrip>.desk{
+        display: none;
+    }
+    .header{
+        padding: 50px 0;   
+    }
+    .header>h5{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .bookADemo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .bookADemo>input,.bookADemo>button{
+        height: 38px;
+        margin: 1rem 0;
+        width: 185px;
+        padding: 8px;
+        font-size: 9.7px;
+    }
+    .bookADemo>button{
+        width: 110px;
+        padding: 8px;
+        margin-left: 0.2rem;
+    }
+    .blueSection>h3 {
+        font-size: 18px;
+    line-height: initial;
+    text-align: center;
+    }
+    .blueSection{
+        padding: 50px 0;
+    }
+    .approach{
+        padding: 60px 15px;
+    }
+    .highlights{
+        padding-left: 15px;
+    padding-right: 15px;
+    }
+    .approach>h4 ,
+    .highlights>h4 ,
+    .reviews>h4{
+        font-size: 22px;
+    line-height: 35px;
+    }
+    .highlights>p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .socialicons{
+        justify-content: flex-start;
+        margin: 1rem 0;
+
+    }
+    .gallery>h3{
+        font-size: 20px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .gallery>button{
+        font-size: 13px;
+        height: 33px;
+        width: 130px;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    .nav-link>button{
+        font-size:13px;
+        color: #6c6767;
+    }
+}
+@media  screen and (max-width:300px) {
+    .whyAwishcar>div>.row{
+        width: 15rem;
+    }
+
 }
