@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --yellow: #FFD233; 
+    --blue:#004FCF;
+    --neonGreen:#5aFF17;
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+.upperStrip{
+    background: var(--yellow);
+    justify-content: space-between;
+    font-style: italic;
+    padding: 0.3rem 0.4rem;
+}
+.upperStrip>h6{
+    font-size:0.9rem;
+}
+.upperStrip>.white{
+    color: white;
+}
+nav{
+    padding: 0 9px;
+}
+.navbar-nav{
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+.nav-link>button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.book>button{
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 13px;
+    font-size: 14px;
+}
+
+
+/* header */
+.header>img{
+    width: 100%;
+    height: auto;
+}
+/* about */
+.about-us>h2{
+    background: #FFD233;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 58px;
+    text-align: center;
+    padding: 0.6rem;
+}
+.about-us>.d-flex{
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.about-us>.d-flex>.text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-us>.d-flex>h3{
+    width: 100%;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+.about-us>.d-flex>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #6B717E;
+}
+.about-us>.d-flex>.img{
+    width: 28%;
+}
+.about-us>.d-flex>.img>img{
+    width: 100%;
+}
+.about-us>.yellow-bg>.heading{
+    width: 50%;
+    background: #FFD233;
+    padding: 4rem 5rem;
+}
+.about-us>.yellow-bg>.heading>h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+}
+.about-us>.yellow-bg>.pointers{
+    width: 50%;
+    background: #FFD23326;
+    padding: 5rem;
+}
+.about-us>.yellow-bg>.pointers>ul{
+    padding: 0;
+}
+.about-us>.yellow-bg>.pointers>ul>li{
+    list-style: none;
+    border-bottom: 1px solid #FFCC19;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.about-us>.yellow-bg>.pointers>ul>li>.d-flex{
+    margin-bottom: 0.4rem;
+    align-items: center;
+}
+.about-us>.yellow-bg>.pointers>ul>li>.d-flex>img{
+    margin-right: 0.7rem;
+}
+.about-us>.yellow-bg>.pointers>ul>li>.d-flex>h5{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 0;
+}
+.about-us>.yellow-bg>.pointers>ul>li>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6B717E;
+}
+.meet-the-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0px;
+}
+.meet-the-team>h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+.meet-the-team>p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6B717E;
+}
+.meet-the-team>.container>.row{
+    margin: 2rem 0;
+}
+.meet-the-team>.container>.row>.col{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.meet-the-team>.container>.row>.col>img{
+    width: 80%;
+}
+.meet-the-team>.container>.row>.col>.name{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 1rem;
+}
+.meet-the-team>.container>.row>.col>.designation{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* featured-work */
+.featured-work>h1{
+    background: #FFD233;
+    margin: 0;
+    font-size: 29px;
+    line-height: 58px;
+    padding: 1rem 6rem;
+    font-weight: 600;
+}
+.featured-work>.row{
+    width: 100%;
+    margin: 0;
+}
+
+.featured-work>.row>.col{
+    width: 25%;
+    height: 18rem;
+    padding: 0;
+}
+.featured-work>.r1>.col:nth-child(1){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/YellowScooters 1.png");
+}
+.featured-work>.r1>.col:nth-child(2){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/chris5 1.png");
+}
+.featured-work>.r1>.col:nth-child(3){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/jeshoots-com-__ZMnefoI3k-unsplash 1.png");
+}
+.featured-work>.r1>.col:nth-child(4){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/AdobeStock_313636079 1.png");
+}
+.featured-work>.r2>.col:nth-child(1){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/pexels-kampus-production-7843950 1.png");
+}
+.featured-work>.r2>.col:nth-child(2){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/Machine 1.png");
+}
+.featured-work>.r2>.col:nth-child(3){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/jasper-doornbos-JCL16LNdP98-unsplash 1.png");
+}
+.featured-work>.r2>.col:nth-child(4){
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("./assets/about/bekky-bekks-aWgaWj7Qv5Q-unsplash 1.png");
+}
+footer{
+    background: black;
+    color: white;
+    padding: 6rem 3rem;
+    padding-bottom: 0.1rem;
+}
+footer>div>.row>.col2>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150.6%;
+    color: #F8F8F8;
+    margin: 0.5rem 0;
+}
+footer>div>.row>.col2>.socialicons>img{
+    margin-right: 1rem;
+}
+footer>div>.row>.col2>.links{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+    line-height: 99.6%;   
+}
+footer>div>.row>.col2>ul>li>a{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    color: #8F97A8;
+}
+footer>div>.row>.col2>ul>li>.subline{
+    text-transform: lowercase;
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 8px;
+}
+.footer-copyright>div,.footer-copyright>div>a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150.6%;
+    color: #8F97A8;
+}
+.desktopFooterLogo{
+height: 17px;
+text-align: center;
+}
+
+@media screen and (max-width:900px) {
+    footer{
+        padding: 6rem 1rem;
+    }
+    footer>div>div>div{
+        text-align: start;
+    }
+    .nav-link{
+        text-align:center;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:focus-visible{
+        outline: none;
+    }
+}
+@media screen and (max-width:528px){
+    .upperStrip{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width:650px){
+    .navbar-brand>img{
+        height: 34px;
+    }
+    .upperStrip{
+        text-align: center;
+    }
+    .upperStrip>h6 {
+        font-size: 0.7rem;
+    }
+    .upperStrip>.desk{
+        display: none;
+    }
+  
+    .bookADemo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .bookADemo>input,.bookADemo>button{
+        height: 38px;
+        margin: 1rem 0;
+        width: 185px;
+        padding: 8px;
+        font-size: 9.7px;
+    }
+    .bookADemo>button{
+        width: 110px;
+        padding: 8px;
+        margin-left: 0.2rem;
+    }
+
+    .about-us>.d-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us>.d-flex>.text{
+        width: 90%;
+    }
+    .about-us>.d-flex>.img{
+        height: 16rem;
+        width: auto;
+    }
+    .about-us>.d-flex>.img>img{
+        height: inherit;
+    }
+    .about-us>.yellow-bg>.heading,
+    .about-us>.yellow-bg>.pointers{
+        width: 100%;
+    }
+    .featured-work>.row>.col{
+        width: 50%;
+    height: 15rem;
+    }
+    .socialicons{
+        justify-content: flex-start;
+        margin: 1rem 0;
+
+    }
+}
