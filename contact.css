@@ -1,0 +1,126 @@
+.bookADemo>h2{
+    background: #FFD233;
+    width: 100%;
+    padding: 1rem;
+    color: black;
+    font-family: 'Inter';
+    margin: 0;
+    text-align: center;
+    font-size: 31px;
+}
+.aboutDemo>.heading{
+    width: 50%;
+    padding: 4rem;
+}
+.aboutDemo>.heading>h4{
+    font-weight: 600;
+    font-size: 33px;
+}
+.aboutDemo>.heading>button{
+    background: #FFC700;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    width: 125px;
+    margin: 1.4rem 0;
+}
+
+.aboutDemo>.pointers{
+    width: 50%;
+    padding: 3rem 2rem;
+}
+.aboutDemo>.pointers>.d-flex{
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.aboutDemo>.pointers>.d-flex>img{
+    height: 20px;
+    margin-right: 10px;
+}
+.aboutDemo>.pointers>.d-flex>h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #6B717E;
+    margin: 0;
+}
+.contactUs>.details{
+    width: 50%;
+    background: #1B1B1B;
+    color: white;
+    padding: 4rem;
+}
+.contactUs>.details>h3{
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 40px;
+}
+.contactUs>.details>p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+.contactUs>.details>.socialicons>img{
+    margin-right: 10px;
+}
+.form{
+    width: 50%;
+    background: #FFD233;
+    padding: 4rem 2rem 5rem 2rem;
+}
+.form>form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-flow: wrap;
+}
+.form>form>div>label{
+    font-weight: 600;
+    font-size: 15px;
+}
+.form>form>div>input,
+.form>form>div>select{
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0.7rem;
+    width: 100%;
+    color: #B0B4BD;
+}
+.form>form>button{
+    background: #1B1B1B;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    width: 125px;
+    margin: 1.4rem 0;
+}
+.form>form>.form-group{
+    display: flex;
+    width: 50%;
+   flex-direction: column;
+    padding-right: 1.4rem;
+}
+.aboutDemo>.heading>button:focus-visible,
+.aboutDemo>.heading>button:focus,
+.form>form>button,
+.form>form>div>input,
+.form>form>div>select{
+    outline: none;
+}
