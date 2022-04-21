@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Awishkar</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./home.css">
+<link rel="stylesheet" href="./pricing.css">
+
+</head>
+<body>
+    <Section class="section upperStrip d-flex">
+        <h6 >BOOK A FREE DEMO ON +91-8757755666</h6>
+        <h6 class="white">AWISHCAR CURRENTLY AVAILABLE IN DELHI NCR</h6>
+        <h6 class="desk">DID YOU KNOW? We wash car using only two-three liters of water</h6>
+        <h6 class="white desk">JOIN 1,000+ HAPPY CUSTOMERS </h6>
+
+    </Section>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <img src="./assets/toggle.png" alt="toggle">
+        </button> 
+        
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarSupportedContent"> 
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html"><button>About Awishcar</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><button>Add-On Services</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><button>Pricing</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link book"><button>Book a demo</button></a>
+              </li>
+            </ul>
+       </div>
+    </nav>
+   
+    <section class="header">
+        <img src="./assets/pricing/pricing-header.png" style="width: 100%;height: 225px;" alt="header">
+    </section>
+    <section class="pricing-header">
+        <h2>Pricing</h2>
+        <div>
+                <h3>Get Started Now, Pick A Plan Later</h3>
+                <p>Simple Pricing. No Hidden Fees. Select your car type to reveal the pricing</p>
+                <button class="d-flex">
+                    <img src="./assets/star.png" alt="star">
+                    Rated 4.97/5 from over 500 reviews.
+                </button>
+        </div>
+        <div class="range-slider">
+            <div id="output"></div>
+            <input id="input" type="range" min="0" value="0" max="5" step="1">
+        </div>
+    </section>
+    <section class="pricing-opt d-flex">
+       
+        
+        <div class="monthly">
+            <!-- <div class="packages d-flex">
+                
+                
+                
+            </div> -->
+           <div class="services">
+            <table>
+                <tr>
+                    <th class="d-flex flex-column">
+                      <div class="duration d-flex">
+                        <button class="active">Monthly</button>
+                        <button>Quarterly</button>
+                        <button>Annually</button>
+                    </div>
+                      Services
+                    </th>
+                    <th></th>
+                    <th style="padding-top: 2.2rem;">
+                        <div class="pck whiteBg">
+                            <h6>Free Demo</h6>
+                            <h5>₹0/month</h5>
+                            <p>For a hint to our services</p>
+                            <button class="blackBtn">Get started for free</button>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="pck greenBg">
+                            <h6 class="rec">RECOMMENDED</h6>
+                            <h6>Silver Package</h6>
+                            <h5>₹1450<span class="grey">/month</span></h5>
+                            <p>For a quick car wash</p>
+                            <button class="blueBtn">Get started for free</button>
+                        </div>
+                    </th>
+                    <th style="padding-top: 2.2rem;">
+                        <div class="pck whiteBg">
+                            <h6>Gold Package</h6>
+                            <h5>₹1500<span class="grey">/month</span></h5>
+                            <p>For a showroom like finish</p>
+                            <button class="blackBtn">Get started for free</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Exterior Wash</td>
+                    <td>
+                        <button>Daily</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Glass Cleaning</td>
+                    <td>
+                        <button>Daily</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Tyre Dressing</td>
+                    <td>
+                        <button>Daily</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Floor Mats Cleaning</td>
+                    <td>
+                        <button>Daily</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>External Coat Application</td>
+                    <td>
+                        <button>Fortnightly</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>External Coat Application</td>
+                    <td>
+                        <button>Monthly</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Grill Cleaning</td>
+                    <td>
+                        <button>Monthly</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Hard Water Spots Removal</td>
+                    <td>
+                        <button>Monthly</button>
+                    </td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>A/C Sanitisation</td>
+                    <td>
+                        <button>3 Months</button>
+                    </td>
+                    <td class="none">-</td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Odour Removal</td>
+                    <td>
+                        <button>3 Months</button>
+                    </td>
+                    <td class="none">-</td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Dry Cleaning</td>
+                    <td>
+                        <button>6 Months</button>
+                    </td>
+                    <td class="none">-</td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                <tr>
+                    <td>Rodent Treatment</td>
+                    <td>
+                        <button>6 Months</button>
+                    </td>
+                    <td class="none">-</td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                    <td><img src="./assets/pricing/greenTick.png" alt="check"></td>
+                </tr>
+                </table>
+           </div>
+
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h4>100% Satisfaction Guranteed</h4>
+        <p>All of our customer loved it and so will you</p>
+        <div class="splide s1">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide ">
+                <div class="review-card-blue">
+                  <div class="stars">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                  </div>
+                  <p>
+                      Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.  
+                  </p>
+                  <div class="profile">
+                      <img src="./assets/review.png" alt="profile">
+                      <div >
+                        <h6>Manpreet Singh</h6>
+                      <p>Sedan Owner</p>
+                      </div>
+                  </div>
+              </div>  
+              </li>
+              <li class="splide__slide">
+                <div class="review-card-blue">
+                  <div class="stars">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                  </div>
+                  <p>
+                      Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.  
+                  </p>
+                  <div class="profile">
+                      <img src="./assets/review.png" alt="profile">
+                      <div >
+                        <h6>Manpreet Singh</h6>
+                      <p>Sedan Owner</p>
+                      </div>
+                  </div>
+              </div>  
+              </li>
+              <li class="splide__slide">
+                <div class="review-card-black">
+                    <div class="stars">
+                        <img src="./assets/star.png" alt="star">
+                        <img src="./assets/star.png" alt="star">
+                        <img src="./assets/star.png" alt="star">
+                        <img src="./assets/star.png" alt="star">
+                        <img src="./assets/star.png" alt="star">
+                    </div>
+                    <p>
+                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.  
+                    </p>
+                    <div class="profile">
+                      <img src="./assets/review.png" alt="profile">
+                      <div>
+                        <h6>Manpreet Singh</h6>
+                      <p>Sedan Owner</p>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li class="splide__slide session-card">
+                <div class="review-card-blue">
+                  <div class="stars">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                      <img src="./assets/star.png" alt="star">
+                  </div>
+                  <p>
+                      Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.  
+                  </p>
+                  <div class="profile">
+                    <img src="./assets/review.png" alt="profile">
+                      <div >
+                        <h6>Manpreet Singh</h6>
+                      <p>Sedan Owner</p>
+                      </div>
+                  </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+          </div>
+    </section>
+    
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <button class="faq d-flex">Is there a free trial available? <img src="./assets/pricing/faq-arr.png" class="arr" alt="open"></button>
+        <div class="content">
+        <p>Yes, you can try us free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <button class="faq d-flex">Can I change my plan later? <img src="./assets/pricing/faq-arr.png" class="arr" alt="open"></button>
+        <div class="content">
+        <p>Yes, you can try us free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <button class="faq d-flex">What is your cancellation policy? <img src="./assets/pricing/faq-arr.png" class="arr" alt="open"></button>
+        <div class="content">
+        <p>Yes, you can try us free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <button class="faq d-flex" >How does billing work? <img src="./assets/pricing/faq-arr.png" class="arr" alt="open"></button>
+        <div class="content">
+        <p>Yes, you can try us free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        
+        <h5 >Have More Questions?</h5>
+        <button class="getInTouch">Get in touch ? <img src="./assets/pricing/right.png" style="height: 12px;" alt="right"></button>
+    </section>
+
+    
+      <footer class="page-footer font-small blue ">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col2 col-xs-12 col-sm-3 col-md-3 c1">
+      
+              <!-- Content -->
+            <img src="./assets/AWISHCAR-footer.png" alt="logo" class="desktopFooterLogo"/>
+            <p>A wish for every car</p>
+            
+            <div class="socialicons d-flex text-center py-1">
+              <img src="./assets/Twitter.png" alt="twitter">
+              <img src="./assets/Instagram.png" alt="insta">
+              <img src="./assets/LinkedIn.png" alt="LinkedIn">
+          </div>
+        </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="col2 col-xs-12 col-sm-3 col-md-3 c2">
+      
+              <h5 class="links">About Awishcar</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">About Us</a>
+                </li>
+                <li>
+                  <a href="#!">Our Values</a>
+                </li>
+                <li>
+                  <a href="#!">The team</a>
+                </li>
+                <li>
+                  <a href="#!">Gallery</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col2 col-xs-12 col-sm-3 col-md-3 c2">
+      
+              <!-- Links -->
+              <h5 class="links">Useful Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Pricing</a>
+                </li>
+                <li>
+                  <a href="#!">Blogs</a>
+                </li>
+                <li>
+                  <a href="#!">FAQ's</a>
+                </li>
+              </ul>
+      
+            </div>
+            
+            <div class="col2 col-xs-12 col-sm-3 col-md-3 c2">
+      
+                <!-- Links -->
+                <h5 class="links">Contact</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">+91-8757755666</a>
+                    <p class="subline">9-5 pm mon-fri</p>
+                  </li>
+                  <li>
+                    <a href="#!">info@awishcar.com</a>
+                    <p class="subline">will reply in 24hrs</p>
+                  </li>
+                  <li>
+                    <a href="#!">2715 Ash Dr. San Jose, Gurgoan, Haryana, India</a>
+                  </li>
+                </ul>
+        
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright py-3 d-flex flex-column">
+            <div class="d-flex"><p>© Copyright Awishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
+        </div>
+      
+        <!-- Copyright -->
+      
+      </footer>
+
+      
+      <script src="./js/croppie.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
+      <script>
+         var values = ['Sedan/Small SUV','Sedan/Small SUV 2','Sedan/Small SUV 3','Sedan/Small SUV 4','Sedan/Small SUV 5','Sedan/Small SUV 6'];
+
+        var input = document.getElementById('input'),
+        output = document.getElementById('output');
+        input.oninput = function(){
+            output.innerHTML = values[this.value];
+        };
+        input.oninput();
+        
+
+
+      console.log(window.innerWidth);
+      if(window.innerWidth>"1020"){
+        new Splide( '.s1', {
+      perPage: 3,
+      perMove: 1,
+    } ).mount();
+      }
+      else if(window.innerWidth>"700"){
+        new Splide( '.s1', {
+      perPage: 2,
+      perMove: 1,
+    } ).mount();
+      }
+      else{
+      new Splide( '.s1', {
+      perPage: 1,
+      perMove: 1,
+    } ).mount();
+      }
+
+
+      var acc = document.getElementsByClassName("faq");
+
+        for (var i = 0; i < acc.length; i++) {
+
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            console.log()
+            this.querySelector('.arr').style.transform='matrix(1, 0, 0, -1, 0, 0)';
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            this.querySelector('.arr').style.transform='matrix(-1, 0, 0, 1, 0, 0)';
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+</script>
+</body>
+</html>
