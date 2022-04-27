@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="./css/addOn.css">
 </head>
 <body>
-    <Section class="section upperStrip d-flex">
-        <h6 >BOOK A FREE DEMO ON +91-8757755666</h6>
-        <h6 class="white">AWISHCAR CURRENTLY AVAILABLE IN DELHI NCR</h6>
-        <h6 class="desk">DID YOU KNOW? We wash car using only two-three liters of water</h6>
-        <h6 class="white desk">JOIN 1,000+ HAPPY CUSTOMERS </h6>
+  <Section class="section upperStrip d-flex">
+    <h6 >BOOK A FREE DEMO ON +91-8757755666</h6>
+    <h6 class="white">AWISHCAR CURRENTLY AVAILABLE IN DELHI NCR</h6>
+    <h6 class="desk">DID YOU KNOW? We wash car using only two-three liters of water</h6>
+    <h6 class="white desk tab">JOIN 1,000+ HAPPY CUSTOMERS </h6>
 
-    </Section>
+</Section>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
 
@@ -54,17 +54,17 @@
         <h2>Add-On Services</h2>
         <div class="services d-flex flex-column">
           <div class="options">
-              <button class="active">Detailing</butto>
-              <button>Ceramic Coating</button>
-              <button>Paint Protection Film(PPF)</button>
-              <button>Wrapping</button>
-              <button>Wash Vacuum</button>
-              <button>Dent Paint</button>
+              <button class="active" id="detailingBtn" onclick="handleAddon()">Detailing</butto>
+              <button id="CeramicBtn" onclick="handleAddon()">Ceramic Coating</button>
+              <button id="PPFBtn" onclick="handleAddon()">Paint Protection Film(PPF)</button>
+              <button id="WrappingBtn" onclick="handleAddon()">Wrapping</button>
+              <button id="WashVaccumBtn" onclick="handleAddon()">Wash Vacuum</button>
+              <button id="DentPaintBtn" onclick="handleAddon()">Dent Paint</button>
           </div>
 
 
           <!-- detailing -->
-          <section class="detailing">
+          <section id="detailing">
             <div class="splide s1">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -96,7 +96,7 @@
           </section>
 
            <!-- Ceramic Coating -->
-           <section class="Ceramic">
+           <section id="Ceramic">
             <div class="splide s2">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -128,7 +128,7 @@
           </section>
 
            <!-- PPF -->
-           <section class="PPF">
+           <section id="PPF">
             <div class="splide s3">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -160,7 +160,7 @@
           </section>
 
            <!-- Wrapping -->
-           <section class="Wrapping">
+           <section id="Wrapping">
             <div class="splide s4">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -192,7 +192,7 @@
           </section>
 
           <!-- Wrapping -->
-          <section class="Wash Vaccum">
+          <section id="WashVaccum">
             <div class="splide s5">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -224,7 +224,7 @@
           </section>
 
           <!-- Dent Paint -->
-          <section class="Dent Paint">
+          <section id="DentPaint">
             <div class="splide s6">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -368,7 +368,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
       <script>
       
-        console.log(window.innerWidth);
+      
 
           new Splide( '.s1', {
         perPage: 1,
@@ -400,6 +400,23 @@
         perMove: 1,
         autoplay:true
       } ).mount();
+      var eleIds=['detailing','Ceramic','PPF','Wrapping','WashVaccum','DentPaint']
+      function handleAddon(){
+        var ele=event.target.id.slice(0,event.target.value.length-3)
+        console.log(ele)
+        for(var i=0;i<eleIds.length;i++){
+          if(ele===eleIds[i]){
+            document.getElementById(ele).style.display="flex"
+            var eleId=event.target.id
+            document.getElementById(eleId).className="active"
+          }else{
+            document.getElementById(eleIds[i]).style.display="none";
+            var btnId=eleIds[i]+"Btn"
+            document.getElementById(btnId).className=""
+          }
+        }
+      }
+
     
 </script>
 </body>

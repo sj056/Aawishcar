@@ -34,7 +34,7 @@
 .services>section{
     display: none;
 }
-.services>.detailing{
+.services>#detailing{
     display: flex;
 }
 .services>section>.splide{
@@ -87,4 +87,65 @@
 }
 .splide__arrows{
     display: none;
+}
+
+
+@media screen and (max-width:900px) {
+
+.services>.options{
+    width: 98%;
+}
+.services>.options>button{
+    font-size: 13px;
+}
+.services>section>.content{
+    padding: 4rem 2rem;
+}
+.services>section>.content>p{
+    font-size: 15px;
+}
+.services>section>.content>button{
+    font-size: 14px;
+    padding: 0.6rem 1.6rem;
+}
+.services>section>.content,
+.services>section>.splide{
+    width: 100%;
+}
+.services>#detailing{
+    flex-direction: column-reverse;
+}
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}
+}
+@media screen and (max-width:650px){
+.services>.options {
+    width: 98%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services>.options>button {
+    font-size: 12px;
+    margin: 0.1rem;
+}
+.services>section{
+    flex-direction: column-reverse;
+}
+ .services>section>.splide {
+    width: 100%;
+    padding: 1rem 1rem 4rem 1rem;
+}
+.services>.options{
+    padding: 1rem ;
+}
+.addOns>h2{
+    font-size: 20px;
+    padding: 1rem;
+}
+.splide__slide img{
+    height: auto;
+    width: 299px;
+}
 }

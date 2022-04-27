@@ -12,13 +12,16 @@
     padding: 0.3rem 0.4rem;
 }
 .upperStrip>h6{
-    font-size:0.9rem;
+    font-size: 0.9rem;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+
 }
 .upperStrip>.white{
     color: white;
 }
 nav{
-    padding: 0 9px;
+    padding: 0 4rem !important;
 }
 .navbar-nav{
     margin-left: auto;
@@ -92,7 +95,7 @@ nav{
     margin-left: 10px;
 }
 .blueSection{
-    background: var(--blue);
+    background: #0CBF0C;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,9 +115,9 @@ nav{
     line-height: 28px;
     color: white;
 }
-.blueSection>h3>.green{
+/* .blueSection>h3>.green{
     color: var(--neonGreen);
-}
+} */
 .whyAwishcar{
     margin-bottom: 8rem;
 }
@@ -138,7 +141,7 @@ nav{
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    color: #004FCF;
+    color: #0CBF0C;
 }
 .whyAwishcar>.container>.row>.col>p{
     font-weight: 500;
@@ -229,7 +232,7 @@ text-align: center;
     align-items: center;
     padding: 66px 0;
     padding-bottom: 8rem;
-    background: #004FCF;
+    background: #0CBF0C;
 }
 .reviews>h4{
     font-weight: 700;
@@ -251,7 +254,7 @@ text-align: center;
 }
 /* crousel */
 .s1{
-    width: 100%;
+    width: 85%;
 }
 .splide__slide{
     display: flex;
@@ -260,55 +263,56 @@ text-align: center;
 .splide__pagination{
     display: none;
 }
-.review-card-blue,.review-card-black{
+.review-card-green,.review-card-black{
     border-radius: 8px;
-    padding: 40px 30px;
+    padding: 40px 24px;
     color: white;
-    max-width: 300px;
+    max-width: 290px;
 }
-.review-card-blue{
-    background: #0045B5;
+.review-card-green{
+    background: #003D28;
 }
 .review-card-black{
-    background: black;
+    background: white;
+    color: black;
 }
-.review-card-blue>.stars,
+.review-card-green>.stars,
 .review-card-black>.stars{
     margin-bottom: 8px;
 }
 .review-card-black>.stars>img,
-.review-card-blue>.stars>img{
+.review-card-green>.stars>img{
     height: 14px;
     width: auto;
 }
 .review-card-black>p,
-.review-card-blue>p{
+.review-card-green>p{
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
 }
 .review-card-black>.profile,
-.review-card-blue>.profile{
+.review-card-green>.profile{
     display: flex;
 }
-.review-card-blue>.profile>img,
+.review-card-green>.profile>img,
 .review-card-black>.profile>img{
     height: 60px;
     width: 60px;
     border-radius: 100%;
 }
-.review-card-blue>.profile>div,
+.review-card-green>.profile>div,
 .review-card-black>.profile>div{
 margin-left: 1rem;
 margin-top: 0.4rem;
 }
-.review-card-blue>.profile>div>h6,
+.review-card-green>.profile>div>h6,
 .review-card-black>.profile>div>h6{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 }
-.review-card-blue>.profile>div>p,
+.review-card-green>.profile>div>p,
 .review-card-black>.profile>div>p{
     font-weight: 400;
     font-size: 16px;
@@ -338,7 +342,7 @@ margin-top: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("./assets/rowan-freeman-clYlmCaQbzY-unsplash\ 1.png"); 
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("../assets/rowan-freeman-clYlmCaQbzY-unsplash\ 1.png"); 
     width: 100%;
     display: flex;
     height: 665px;
@@ -375,7 +379,7 @@ outline: none;
 footer{
     background: black;
     color: white;
-    padding: 6rem 3rem;
+    padding: 6rem 5rem;
     padding-bottom: 0.1rem;
 }
 footer>div>.row>.col2>p{
@@ -384,6 +388,9 @@ footer>div>.row>.col2>p{
     line-height: 150.6%;
     color: #F8F8F8;
     margin: 0.5rem 0;
+}
+footer>div>.row>.c1{
+    padding: 0;
 }
 footer>div>.row>.col2>.socialicons>img{
     margin-right: 1rem;
@@ -419,12 +426,43 @@ footer>div>.row>.col2>ul>li>.subline{
 height: 17px;
 text-align: center;
 }
+footer>div>.row{
+    justify-content: space-between;
+}
 @media screen and (max-width:1000px) {
     .header>img{
         width: 80%;
     }
 }
 @media screen and (max-width:900px) {
+    .upperStrip>.tab{
+        display: none;
+    }
+    .upperStrip>h6{
+        font-size: 0.6rem;
+    }
+    .header>h5{
+        font-weight: 800;
+    font-size: 40px; 
+    line-height: 55px;
+    }
+    .bookADemo>input{
+        width: 280px;
+    height: 40px;
+    padding: 17px;
+    font-size: 12px;
+    }
+    .bookADemo>button{
+        font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    }
+    .blueSection>h3{
+        font-weight: 700;
+    font-size: 35px;
+    line-height: 28px;
+    }
+
     .whyAwishcar>div>.row{
         display: block;
         width: 20rem;
@@ -444,14 +482,29 @@ text-align: center;
     .approach>p{
         text-align: center;
     }
+    .approach>h4{
+        font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    }
+    .approach_vid{
+        width: 86%;
+    height: auto;
+    margin: 1rem 0;
+    }
     footer{
-        padding: 6rem 1rem;
+        padding: 4rem 1rem;
     }
     footer>div>div>div{
         text-align: start;
+        max-width: 25% !important;
+        padding:0 !important;
+    }
+    footer>div>div>.desk{
+        display: none;
     }
     .gallery{
-        background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("./assets/mobile-bg.png");
+        background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("./../assets/tabGallery.png");
         height: 516px;
     }
     .navbar-toggler:focus,
@@ -466,7 +519,9 @@ text-align: center;
     }
 }
 @media screen and (max-width:650px){
-   
+   nav{
+    padding:0 1rem !important;
+   }
 
     .navbar-brand>img{
         height: 34px;
@@ -521,6 +576,9 @@ text-align: center;
 
         width: 95%;
     }
+    .gallery{
+        background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("./../assets/mobile-bg.png");
+    }
     .highlights{
         padding-left: 15px;
     padding-right: 15px;
@@ -539,6 +597,13 @@ text-align: center;
         justify-content: flex-start;
         margin: 1rem 0;
 
+    }
+    footer>div>.row{
+        flex-direction: column;
+    }
+    footer>div>div>div{
+        max-width: 100% !important;
+        margin: 1rem 0;
     }
     .gallery>h3{
         font-size: 20px;
