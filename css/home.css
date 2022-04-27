@@ -5,6 +5,10 @@
     --neonGreen:#5aFF17;
     font-family: 'Inter', sans-serif;
 }
+*{
+    font-family: Inter, sans-serif;
+    letter-spacing: -0.02rem;
+}
 .upperStrip{
     background: var(--yellow);
     justify-content: space-between;
@@ -52,6 +56,12 @@ nav{
     border-radius: 4px;
     padding: 6px 13px;
     font-size: 14px;
+    cursor: pointer;
+}
+.book>button:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background: black;
 }
 .header{
     background: rgba(255, 210, 51, 0.15);
