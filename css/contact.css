@@ -21,7 +21,8 @@
     font-weight: 600;
     font-size: 33px;
 }
-.aboutDemo>.heading>button{
+.aboutDemo>.heading>button,
+.bookBtnMob{
     background: #FFC700;
     border-radius: 4px;
     color: white;
@@ -35,19 +36,22 @@
     width: 125px;
     margin: 1.4rem 0;
 }
-
+.bookBtnMob{
+    display: none;
+}
 .aboutDemo>.pointers{
     width: 50%;
     padding: 3rem 2rem;
 }
 .aboutDemo>.pointers>.d-flex{
-    align-items: center;
-    margin: 0.5rem 0;
+    align-items: flex-start;
     width: 95%;
+    margin-bottom: 0.3rem;
 }
 .aboutDemo>.pointers>.d-flex>img{
     height: 20px;
     margin-right: 10px;
+    margin-top: 4px;
 }
 .aboutDemo>.pointers>.d-flex>h6{
     font-weight: 500;
@@ -131,4 +135,78 @@
 .form>form>div>input,
 .form>form>div>select{
     outline: none;
+}
+
+
+@media screen and (max-width:900px) {
+    .aboutDemo>.heading{
+        padding: 5rem 3rem;
+    }
+    .contactUs{
+        flex-direction: column;
+    }
+    .contactUs>.details,
+    .form{
+        width: 100%;
+    }
+    .form{
+        padding: 4rem 3rem 5rem 2rem;
+    }
+}
+@media screen and (max-width:650px){
+.aboutDemo{
+    flex-direction: column;
+}
+.aboutDemo>.heading{
+    padding: 2rem 1rem;
+    width: 100%;
+    padding-bottom: 0;
+}
+.aboutDemo>.heading>h4{
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+.heading>h4>br{
+    display: none;
+}
+.aboutDemo>.pointers{
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0;
+}
+.contactUs>.details>h3{
+    font-size: 30px;
+}
+.contactUs>.details{
+    padding:3rem 1.5rem;
+}
+.form{
+    padding: 4rem 1.5rem 5rem 1.5rem;
+}
+.form>form{
+    flex-flow: column;
+}
+.form>form>.form-group{
+    width: 100%;
+    padding-right: 0;
+}
+.form>form>button{
+    padding: 0.9rem 1rem;
+    font-size: 14px;
+    width: 150px;
+    margin: 1.4rem 0;
+}
+
+.bookBtnMob{
+    display: initial;
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    width: 165px;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+}
+.aboutDemo>.heading>button{
+    display: none;
+}
 }

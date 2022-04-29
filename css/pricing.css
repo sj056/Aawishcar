@@ -76,6 +76,7 @@
 .pricing-opt{
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
 }
 .duration>button{
     background: transparent;
@@ -100,12 +101,16 @@
     margin-right: 7px;
 }
 .services>table>tbody>tr>th{
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
-/* .services>table>tbody>tr:nth-child(3),
-.services>table>tbody>tr:nth-child(5){
-padding-top: 2.2rem;
-} */
+.services>table>tbody>tr>.duration{
+    padding: 1rem 4rem;
+}
+
+.services>table>tbody>tr>.durationBtn{
+    padding-left: 2rem;
+}
+
 .pck>h6{
     font-weight: 600;
     font-size: 13px;
@@ -113,7 +118,7 @@ padding-top: 2.2rem;
 }
 .pck>h5{
     font-weight: 600;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 20px;
     letter-spacing: -0.03em;
     color: #0CBF0C;
@@ -135,7 +140,7 @@ padding-top: 2.2rem;
     padding: 0.3rem 1.3rem;
     border-radius: 3px;
 }
-.greenBg>button{
+.blueBtn{
     font-weight: 700;
     font-size: 11px;
     line-height: 15px;
@@ -189,6 +194,17 @@ padding-top: 2.2rem;
     padding: 0.7rem 0;
     font-size: 15px;
 }
+.headerRow{
+    border-top: none !important;
+}
+
+.services>table>tbody>tr>.none{
+    font-size: 30px;
+    color: #0CBF0C;
+    font-weight: 300;
+    padding: 0.2rem 0;
+    padding-left: 5rem;
+}
 .services>table>tbody>tr>td>button{
     font-weight: 600;
     font-size: 10.88235px;
@@ -199,10 +215,20 @@ padding-top: 2.2rem;
     background: transparent;
     color: #0CBF0C;
     padding: 0.25rem 0.7rem;
+    width: 72px;
 }
 .services>table>tbody>tr>td>img{
     margin-left: 5rem;
 }
+.greenBg{
+    background: #0CBF0C0D;
+}
+
+.services>table>tbody>tr>td>button:focus-visible,
+.services>table>tbody>tr>td>button:focus{
+outline: none;
+}
+
 .reviews{
     display: flex;
     flex-direction: column;
