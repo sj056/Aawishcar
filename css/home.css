@@ -108,7 +108,7 @@ nav{
     margin-left: 10px;
 }
 .blueSection{
-    background: #0CBF0C;
+    background: #004FCF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +154,7 @@ nav{
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    color: #0CBF0C;
+    color: #004FCF;
 }
 .whyAwishcar>.container>.row>.col>p{
     font-weight: 500;
@@ -245,7 +245,7 @@ text-align: center;
     align-items: center;
     padding: 66px 0;
     padding-bottom: 8rem;
-    background: #0CBF0C;
+    background: #004FCF;
 }
 .reviews>h4{
     font-weight: 700;
@@ -283,11 +283,10 @@ text-align: center;
     max-width: 290px;
 }
 .review-card-green{
-    background: #003D28;
+background: #0045B5;
 }
 .review-card-black{
-    background: white;
-    color: black;
+    background: black;
 }
 .review-card-green>.stars,
 .review-card-black>.stars{

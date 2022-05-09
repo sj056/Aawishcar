@@ -249,7 +249,7 @@ nav{
 footer{
     background: black;
     color: white;
-    padding: 6rem 3rem;
+    padding: 6rem 5rem;
     padding-bottom: 0.1rem;
 }
 footer>div>.row>.col2>p{
@@ -258,6 +258,9 @@ footer>div>.row>.col2>p{
     line-height: 150.6%;
     color: #F8F8F8;
     margin: 0.5rem 0;
+}
+footer>div>.row>.c1{
+    padding: 0;
 }
 footer>div>.row>.col2>.socialicons>img{
     margin-right: 1rem;
@@ -289,13 +292,14 @@ footer>div>.row>.col2>ul>li>.subline{
     line-height: 150.6%;
     color: #8F97A8;
 }
-footer>div>.row>.c1{
-    padding: 0;
-}
 .desktopFooterLogo{
 height: 17px;
 text-align: center;
 }
+footer>div>.row{
+    justify-content: space-between;
+}
+
 
 @media screen and (max-width:900px) {
     footer{
