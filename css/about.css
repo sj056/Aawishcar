@@ -362,7 +362,10 @@ text-align: center;
     nav{
         padding:0 1rem !important;
        }
-    
+       .nav-link>button {
+        font-size: 13px;
+        color: #6c6767;
+    }
     .navbar-brand>img{
         height: 34px;
     }
