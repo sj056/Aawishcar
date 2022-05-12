@@ -293,6 +293,8 @@
           emailjs.send('service_6vbjg5l', 'template_7ndfbw2', templateParams, 'LoUkOqO-6sJ_xodK2')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
+            document
+        .getElementById("contactForm").reset();
           }, function(error) {
             console.log('FAILED...', error);
           });
