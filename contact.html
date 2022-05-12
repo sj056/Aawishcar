@@ -104,23 +104,23 @@
         method="POST">
             <div class="form-group">
                 <label for="name">Name <span class="important">*</span></label>
-                <input type="text" placeholder="Name" name="Name" required>
+                <input type="text" placeholder="Name" name="Name" id="name" required>
             </div>
             <div class="form-group">
                 <label for="Location">Location <span class="important">*</span></label>
-                <input type="text" placeholder="Location" name="Location" required>
+                <input type="text" placeholder="Location" name="Location" id="location" required>
             </div>
              <div class="form-group">
                 <label for="Phone number">Phone number <span class="important">*</span></label>
-                <input type="text" placeholder="Phone number" name="Phone number" required>
+                <input type="text" placeholder="Phone number" name="Phone number" id="Phone number" required>
              </div>
             <div class="form-group ">
                 <label for="email">Email address <span class="important">*</span></label>
-                <input type="email" placeholder="Email" name="email" required>
+                <input type="email" placeholder="Email" name="email" id="email" required>
             </div>
             <div class="form-group">
                 <label for="name">Car type <span class="important">*</span></label>
-                <select name="type">
+                <select name="type" id="type">
                     <option value="" disabled selected class="disabled-option">Type</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
@@ -129,7 +129,7 @@
             </div>
             <div class="form-group ">
                 <label for="name">Time slots<span class="important">*</span></label>
-                <select name="slot">
+                <select name="slot" id="timeslot">
                     <option value="" disabled selected class="disabled-option">Time slots</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
@@ -273,13 +273,24 @@
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-       
+          var name=document.getElementById('name').value;
+          var loc=document.getElementById('location').value;
+          var phn=document.getElementById('Phone number').value;
+          var mail=document.getElementById('email').value;
+          var type=document.getElementById('type').value;
+          var time=document.getElementById('timeslot').value;
+
+
           var templateParams = {
-              name: 'James',
-              notes: 'Check this out!'
+              name: name,
+              loc:loc,
+              phn:phn,
+              mail:mail,
+              type:type,
+              time:time
           };
  
-          emailjs.send('service_6vbjg5l', 'template_7ndfbw2', templateParams)
+          emailjs.send('service_6vbjg5l', 'template_7ndfbw2', templateParams, 'LoUkOqO-6sJ_xodK2')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
           }, function(error) {
