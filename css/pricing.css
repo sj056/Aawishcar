@@ -6,6 +6,10 @@
     background: none;
     padding: 0;
 }
+.header>img{
+    width: 100%;
+    height: 225px;
+}
 .pricing-header{
     display: flex;
     flex-direction: column;
@@ -74,7 +78,8 @@
 .range-slider>input{
     width: 80%;
 }
-#output>img{
+#output>img,
+#out>img{
     height: 12px;
     margin-right: 3px;
     margin-bottom: 2px;
@@ -143,7 +148,10 @@
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.03em;
-    color: #0CBF0C;
+    color: #9D9D9D;
+}
+.grey{
+    color: #9D9D9D;
 }
 .pck>.blackBtn{
     font-weight: 700;
@@ -220,7 +228,8 @@
     padding: 0.2rem 0;
     padding-left: 5rem;
 }
-.services>table>tbody>tr>td>button{
+.services>table>tbody>tr>td>button,
+.durationBtn>button{
     font-weight: 600;
     font-size: 10.88235px;
     line-height: 10px;
@@ -474,16 +483,210 @@ input[type=range]::-webkit-slider-thumb {
     border:none;
 } */
 
+
+/* mob */
+#mob-suv-small,
+#mob-suv-medium,
+#mob-suv-large,
+#qu-sil-h,
+#hy-sil-h,
+#qu-gold-h,
+#hy-gold-h,
+
+#qu-sil-ss,
+#hy-sil-ss,
+#qu-gold-ss,
+#hy-gold-ss,
+
+#qu-sil-sm,
+#hy-sil-sm,
+#qu-gold-sm,
+#hy-gold-sm,
+
+#qu-sil-sl,
+#hy-sil-sl,
+#qu-gold-sl,
+#hy-gold-sl,
+
+#mobSuvMed,
+#mobSuvSmall,
+#mobSuvLar
+{
+    display: none;
+}
+
+
+.mob-pricing-table{
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+.mob-pricing-table>div>.duration{
+    justify-content: center;
+    margin: 2rem 0;
+}
+.mob-pricing-table>div>.d-flex{
+    justify-content: space-between;
+}
+.mob-pricing-table>table{
+    width: 100%;
+}
+.mob-pricing-table>div>div>.pck{
+    padding: 0.9rem;
+}
+.mob-pricing-table>.range-slider{
+    margin-left: 10%;
+}
+.mob-pricing-table>table>tbody>tr>th{
+    font-size: 20px;
+    padding-bottom: 0.3rem;
+}
+.mob-pricing-table>table>tbody>tr>td{
+    font-size: 14px;
+    padding: 0.5rem 0;
+    padding-left: 2rem;
+}
+.mob-pricing-table>table>tbody>tr{
+    border-bottom: 0.692592px solid #CBCBCB;
+}
+
 @media screen and (max-width:900px) {
 .desk,
 .duration{
     display: none;
 }
-.services{
-    width: 40%;
+.mob-pricing-table{
+    display: block;
 }
-/* .headerRow>.d-flex{
+.mob-pricing-table>div>.duration{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.deskPricing{
     display: none !important;
-} */
+}
+.range-slider>div{
+    font-size: 10px;
+}
+.header>img{
+    height: auto;
+}
+.pricing-header>h2{
+    font-size: 25px;
+}
+.pricing-header>div{
+    width: 100%;
+}
+.pricing-header>div>h3{
+    font-size: 25px;
+    line-height: 36px;
+}
+.pricing-header>div>p{
+    font-size: 12px;
+}
+.pricing-header>div>button{
+    font-size: 10px;
+}
+.reviews>h4{
+    font-size: 28px;
+}
+.reviews>p{
+    font-size: 13px;
+}
+.faqs{
+    padding: 4rem 2rem;
+}
+.faqs>h2{
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.faqs>.faq{
+    font-size: 15px;
+    line-height: 28px;
+}
+.faqs>h5{
+    font-size: 20px;
+    line-height: 2px;
+}
+.getInTouch{
+    padding: 0.5rem 0rem;
+    font-size: 14px;
+    line-height: 19px;
+    width: 133px;
+}
+}
 
+@media screen and (max-width:650px){
+    .mob-pricing-table>div>div>.pck{
+        padding: 0rem 0.1rem; 
+    padding-top: 1rem;
+    }
+    .pck>h5{
+        font-size: 17px;
+    }
+    .blueBtn,
+    .pck>.blackBtn{
+        padding: 0.3rem;
+        font-size: 8px;
+    }
+    .pck>h6{
+        font-size: 12px;
+    }
+    .pck>p{
+        font-size: 8px;
+    }
+    .mob-pricing-table>div>.duration{
+        width: 100%;
+        justify-content: center;
+    }
+    .mob-pricing-table>table>tbody>tr>td{
+        padding-left: 0;
+    }
+    .reviews>h4{
+        font-size: 20px;
+    }
+    .reviews>p{
+        font-size: 12px;
+    }
+    .faqs{
+        padding: 4rem 1rem;
+    }
+    .faqs>h2{
+        font-size: 20px;
+    }
+    .faqs>.content>p{
+        font-size: 11px;
+    }
+    .range-slider>input{
+        width: 100%;
+    }
+    .mob-pricing-table>.range-slider{
+        margin-left: 0%;
+    }
+    .range-slider>div{
+        font-size: 7px;
+        padding: 0.1rem 0.3rem;
+    }
+    #out>img {
+        height: 9px;
+    }
+    .pricing-header>div>h3 {
+        font-size: 18px;
+        line-height: 14px;
+    }
+    .pricing-header>div>p{
+        font-size: 10px;
+    }
+    .duration>button{
+        font-size: 12px;
+    }
+    .mob-pricing-table>div>.duration{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .mob-pricing-table>table{
+        margin-top: 1rem;
+    }
 }

@@ -100,26 +100,27 @@
         </div>
    
     <div class="form">
-        <form>
+        <form id="contactForm"
+        method="POST">
             <div class="form-group">
                 <label for="name">Name <span class="important">*</span></label>
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Name" name="Name" required>
             </div>
             <div class="form-group">
-                <label for="name">Location <span class="important">*</span></label>
-                <input type="text" placeholder="Location" required>
+                <label for="Location">Location <span class="important">*</span></label>
+                <input type="text" placeholder="Location" name="Location" required>
             </div>
              <div class="form-group">
-                <label for="name">Phone number <span class="important">*</span></label>
-                <input type="text" placeholder="Name" required>
+                <label for="Phone number">Phone number <span class="important">*</span></label>
+                <input type="text" placeholder="Phone number" name="Phone number" required>
              </div>
             <div class="form-group ">
-                <label for="name">Email address <span class="important">*</span></label>
-                <input type="text" placeholder="Name" required>
+                <label for="email">Email address <span class="important">*</span></label>
+                <input type="email" placeholder="Email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="name">Car type <span class="important">*</span></label>
-                <select>
+                <select name="type">
                     <option value="" disabled selected class="disabled-option">Type</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
@@ -128,7 +129,7 @@
             </div>
             <div class="form-group ">
                 <label for="name">Time slots<span class="important">*</span></label>
-                <select>
+                <select name="slot">
                     <option value="" disabled selected class="disabled-option">Time slots</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
@@ -252,27 +253,40 @@
 </footer>
       <script src="./js/croppie.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
-      <script>
-      
-        console.log(window.innerWidth);
-        if(window.innerWidth>"1020"){
-          new Splide( '.s1', {
-        perPage: 3,
-        perMove: 1,
-      } ).mount();
-        }
-        else if(window.innerWidth>"700"){
-          new Splide( '.s1', {
-        perPage: 2,
-        perMove: 1,
-      } ).mount();
-        }
-        else{
-        new Splide( '.s1', {
-        perPage: 1,
-        perMove: 1,
-      } ).mount();
-        }
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
+      <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+   
+      <script type="text/javascript">
+
+         document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+       
+          var templateParams = {
+              name: 'James',
+              notes: 'Check this out!'
+          };
+ 
+          emailjs.send('service_6vbjg5l', 'template_7ndfbw2', templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+        })
+       
 </script>
 </body>
 </html>

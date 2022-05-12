@@ -48,7 +48,7 @@
     </nav>
    
     <section class="header">
-        <img src="./assets/pricing/pricing-header.png" style="width: 100%;height: 225px;" alt="header">
+        <img src="./assets/pricing/pricing-header.png" alt="header">
     </section>
     <section class="pricing-header">
         <h2>Pricing</h2>
@@ -60,7 +60,7 @@
                     Rated 4.97/5 from over 500 reviews.
                 </button>
         </div>
-        <div class="range-slider">
+        <div class="range-slider deskPricing">
             <div id="output"></div>
             <input id="input" type="range" min="0" value="0" max="3" step="1">
         </div>
@@ -75,45 +75,8 @@
                 
             </div> -->
            <div class="services">
-             <!-- for desktop -->
-            <table>
-                <!-- <tr class="mob" id="hatchback">
-                  <th>
-                    <div class="duration d-flex">
-                      <button class="dur active" onclick="handleUpdate('mn-sil-hatchback','mn-gold-hatchback')">Monthly</button>
-                      <button class="dur" onclick="handleUpdate('qu-sil-hatchback','qu-gold-hatchback')">Quarterly</button>
-                      <button class="dur" onclick="handleUpdate('hy-sil-hatchback','hy-gold-hatchback')">Annually</button>
-                  </div>
-                </th>
-                </tr>
-                <tr class="mob" id="suv-small">
-                  <th>
-                    <div class="duration d-flex">
-                      <button class="dur active" onclick="handleUpdate('mn-sil-suv-small','mn-gold-suv-small')">Monthly</button>
-                      <button class="dur" onclick="handleUpdate('qu-sil-suv-small','qu-gold-suv-small')">Quarterly</button>
-                      <button class="dur" onclick="handleUpdate('hy-sil-suv-small','hy-gold-suv-small')">Annually</button>
-                  </div>
-                </th>
-                </tr>
-                <tr class="mob" id="suv-medium">
-                  <th>
-                    <div class="duration d-flex">
-                      <button class="dur active" onclick="handleUpdate('mn-sil-suv-medium','mn-gold-suv-medium')">Monthly</button>
-                      <button class="dur" onclick="handleUpdate('qu-sil-suv-medium','qu-gold-suv-medium')">Quarterly</button>
-                      <button class="dur" onclick="handleUpdate('hy-sil-suv-medium','hy-gold-suv-medium')">Annually</button>
-                  </div>
-                </th>
-                </tr>
-                <tr class="mob" id="suv-large">
-                  <th>
-                    <div class="duration d-flex">
-                      <button class="dur active" onclick="handleUpdate('mn-sil-suv-large','mn-gold-suv-large')">Monthly</button>
-                      <button class="dur" onclick="handleUpdate('qu-sil-suv-large','qu-gold-suv-large')">Quarterly</button>
-                      <button class="dur" onclick="handleUpdate('hy-sil-suv-large','hy-gold-suv-large')">Annually</button>
-                  </div>
-                </th>
-                </tr> -->
-
+            <table class="deskPricing">
+          
                 <tr class="headerRow" id="hatchback">
                     <th class="d-flex flex-column" style="padding-left:0 ;">
                       <div class="duration d-flex">
@@ -392,10 +355,257 @@
                     <td class="desk"><img src="./assets/pricing/greenTick.png" alt="check"></td>
                 </tr>
             </table>
+            
 
-          
 
+            <!-- mobile -->
+           <div class="mob-pricing-table">
+
+              <div class="range-slider">
+                <div id="out"></div>
+                <input id="inp" type="range" min="0" value="0" max="3" step="1">
+             </div>
+            
+             <div id="mob-hatchback">
+                <div class="duration d-flex">
+                  <button class="dur active" onclick="handleUpdateMob('mn-sil','mn-gold','h')">Monthly</button>
+                  <button class="dur" onclick="handleUpdateMob('qu-sil','qu-gold','h')">Quarterly</button>
+                  <button class="dur" onclick="handleUpdateMob('hy-sil','hy-gold','h')">Annually</button>
+              </div>
+              <div class="d-flex">
+                <div class="pck " style="padding-top: 2.2rem;">
+                    <h6>Free Demo</h6>
+                    <h5>₹0/month</h5>
+                    <p>For a hint to our services</p>
+                    <button class="blackBtn">Get started for free</button>
+                </div>
+                <div class="pck greenBg" >
+                  <h6 class="rec">RECOMMENDED</h6>
+                  <h6>Silver Package</h6>
+                  <h5 id="mn-sil-h">₹1300<span class="grey">/month</span></h5>
+                  <h5 id="qu-sil-h">₹3600<span class="grey">/month</span></h5>
+                  <h5 id="hy-sil-h">₹6600<span class="grey">/month</span></h5>
+                  <p>For a quick car wash</p>
+                  <button class="blueBtn">Get started for free</button>
+              </div>
+              <div class="pck" style="padding-top: 2.2rem;">
+                <h6>Gold Package</h6>
+                <h5 id="mn-gold-h">₹1500<span class="grey">/month</span></h5>
+                <h5 id="qu-gold-h">₹4200<span class="grey">/month</span></h5>
+                <h5 id="hy-gold-h">₹7800<span class="grey">/month</span></h5>
+                <p>For a showroom like finish</p>
+                <button class="blackBtn">Get started for free</button>
+            </div>
+
+              </div>
+             </div>
+             <div id="mob-suv-small">
+              <div class="duration d-flex">
+                <button class="dur active" onclick="handleUpdateMob('mn-sil','mn-gold','ss')">Monthly</button>
+                <button class="dur" onclick="handleUpdateMob('qu-sil','qu-gold','ss')">Quarterly</button>
+                <button class="dur" onclick="handleUpdateMob('hy-sil','hy-gold','ss')">Annually</button>
+            </div>
+            <div class="d-flex">
+             <div class="pck " style="padding-top: 2.2rem;">
+                    <h6>Free Demo</h6>
+                    <h5>₹0/month</h5>
+                    <p>For a hint to our services</p>
+                    <button class="blackBtn">Get started for free</button>
+                </div>
+                <div class="pck greenBg">
+                  <h6 class="rec">RECOMMENDED</h6>
+                  <h6>Silver Package</h6>
+                  <h5 id="mn-sil-ss">₹1500<span class="grey">/month</span></h5>
+                  <h5 id="qu-sil-ss">₹4200<span class="grey">/month</span></h5>
+                  <h5 id="hy-sil-ss">₹7800<span class="grey">/month</span></h5>
+                  <p>For a quick car wash</p>
+                  <button class="blueBtn">Get started for free</button>
+              </div>
+              <div class="pck" style="padding-top: 2.2rem;">
+                <h6>Gold Package</h6>
+                <h5 id="mn-gold-ss">₹1700<span class="grey">/month</span></h5>
+                <h5 id="qu-gold-ss">₹4800<span class="grey">/month</span></h5>
+                <h5 id="hy-gold-ss">₹9000<span class="grey">/month</span></h5>
+                <p>For a showroom like finish</p>
+                <button class="blackBtn">Get started for free</button>
+            </div>
+
+            </div>
+             </div>
+              <div id="mob-suv-medium">
+                <div class="duration d-flex">
+                  <button class="dur active" onclick="handleUpdateMob('mn-sil','mn-gold','sm')">Monthly</button>
+                <button class="dur" onclick="handleUpdateMob('qu-sil','qu-gold','sm')">Quarterly</button>
+                <button class="dur" onclick="handleUpdateMob('hy-sil','hy-gold','sm')">Annually</button>
+              </div>
+              <div class="d-flex">
+                <div class="pck " style="padding-top: 2.2rem;">
+                  <h6>Free Demo</h6>
+                  <h5>₹0/month</h5>
+                  <p>For a hint to our services</p>
+                  <button class="blackBtn">Get started for free</button>
+              </div>
+              <div class="pck greenBg">
+                <h6 class="rec">RECOMMENDED</h6>
+                <h6>Silver Package</h6>
+                <h5 id="mn-sil-sm">₹1700<span class="grey">/month</span></h5>
+                <h5 id="qu-sil-sm">₹4800<span class="grey">/month</span></h5>
+                <h5 id="hy-sil-sm">₹9000<span class="grey">/month</span></h5>
+                <p>For a quick car wash</p>
+                <button class="blueBtn">Get started for free</button>
+            </div>
+            <div class="pck" style="padding-top: 2.2rem;">
+              <h6>Gold Package</h6>
+              <h5 id="mn-gold-sm">₹1900<span class="grey">/month</span></h5>
+              <h5 id="qu-gold-sm">₹5400<span class="grey">/month</span></h5>
+              <h5 id="hy-gold-sm">₹10200<span class="grey">/month</span></h5>
+              <p>For a showroom like finish</p>
+              <button class="blackBtn">Get started for free</button>
+          </div>
+
+              </div>
+              </div>
+              <div id="mob-suv-large">
+                  <div class="duration d-flex">
+                    <button class="dur active" onclick="handleUpdateMob('mn-sil','mn-gold','sl')">Monthly</button>
+                    <button class="dur" onclick="handleUpdateMob('qu-sil','qu-gold','sl')">Quarterly</button>
+                    <button class="dur" onclick="handleUpdateMob('hy-sil','hy-gold','sl')">Annually</button>
+                </div>
+                <div class="d-flex">
+                  <div class="pck " style="padding-top: 2.2rem;">
+                    <h6>Free Demo</h6>
+                    <h5>₹0/month</h5>
+                    <p>For a hint to our services</p>
+                    <button class="blackBtn">Get started for free</button>
+                </div>
+                <div class="pck greenBg">
+                  <h6 class="rec">RECOMMENDED</h6>
+                  <h6>Silver Package</h6>
+                  <h5 id="mn-sil-sl">₹1900<span class="grey">/month</span></h5>
+                  <h5 id="qu-sil-sl">₹5400<span class="grey">/month</span></h5>
+                  <h5 id="hy-sil-sl">₹10200<span class="grey">/month</span></h5>
+                  <p>For a quick car wash</p>
+                  <button class="blueBtn">Get started for free</button>
+              </div>
+              <div class="pck" style="padding-top: 2.2rem;">
+                <h6>Gold Package</h6>
+                <h5 id="mn-gold-sl">₹2100<span class="grey">/month</span></h5>
+                <h5 id="qu-gold-sl">₹6000<span class="grey">/month</span></h5>
+                <h5 id="hy-gold-sl">₹11400<span class="grey">/month</span></h5>
+                <p>For a showroom like finish</p>
+                <button class="blackBtn">Get started for free</button>
+            </div>
+
+                </div>
+              </div>
+             
+           
+            <table>
+              <tr style="    border-bottom: 1px solid;">
+                <th>
+                  Services
+                </th>
+                
+              </tr>
+              <tr>
+                  <td>Exterior Wash</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Daily</button>
+                  </td>
+                  
+              </tr>
+              <tr>
+                  <td>Glass Cleaning</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Daily</button>
+                  </td>
+              
+              </tr>
+              <tr>
+                  <td>Tyre Dressing</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Daily</button>
+                  </td>
+             
+              </tr>
+              <tr>
+                  <td>Floor Mats Cleaning</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Daily</button>
+                  </td>
+               
+              </tr>
+              <tr>
+                  <td>External Coat Application</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Fortnightly</button>
+                  </td>
+                
+              </tr>
+              <tr>
+                  <td>External Coat Application</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Monthly</button>
+                  </td>
+                
+              </tr>
+              <tr>
+                  <td>Grill Cleaning</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Monthly</button>
+                  </td>
+               
+              </tr>
+              <tr>
+                  <td>Hard Water Spots Removal</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>Monthly</button>
+                  </td>
+                  
+              </tr>
+              <tr>
+                  <td>A/C Sanitisation</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>3 Months</button>
+                  </td>
+        
+              </tr>
+              <tr>
+                  <td>Odour Removal</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>3 Months</button>
+                  </td>
+                 
+              </tr>
+              <tr>
+                  <td>Dry Cleaning</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>6 Months</button>
+                  </td>
+                
+              </tr>
+              <tr>
+                  <td>Rodent Treatment</td>
+                  <td></td>
+                  <td class="durationBtn">
+                      <button>6 Months</button>
+                  </td>
+                
+              </tr>
+          </table>
            </div>
+          </div>
 
         </div>
     </section>
@@ -675,19 +885,18 @@
         });
         }
          
-        var eleIds=['mn-sil','qu-sil','hy-sil','qu-gold','mn-gold','hy-gold']
+        // destop pricing table -----
+        // handling state change - monthly, quarterly, annually
 
+        var eleIds=['mn-sil','qu-sil','hy-sil','qu-gold','mn-gold','hy-gold']
         function handleUpdate(a,b){
           var btns=document.querySelectorAll(".dur")
-          
-          
           for(var i=0;i<btns.length;i++){
             if(event.target!==btns[i]){
               btns[i].className="dur"
             }
           }
           event.target.classList.add("active")
-         
           for(var i=0;i<eleIds.length;i++){
             var eleId=eleIds[i]+'-'+event.target.parentElement.parentElement.parentElement.id
             if(a===eleId){
@@ -701,7 +910,8 @@
             }
           }
         }
-
+        
+        // handling state of input range -------
         var values = ['Hatchback','Sedan/SUV Small','Sedan/SUV Medium','Sedan/SUV Large'];
          var headRowIds=['hatchback','suv-small','suv-medium','suv-large']
          var input = document.getElementById('input');
@@ -713,12 +923,9 @@
             output.style.marginLeft=`${marginBtn}%`
            
             for(var i=0;i<4;i++){
-              if(this.value==i){
-                
+              if(this.value==i){               
                 document.getElementById(headRowIds[i]).style.display="table-row"
                 document.querySelector(`tr#${headRowIds[i]}>th>div>.dur`).setAttribute('class','dur active')
-
-
                 for(var j=0;j<eleIds.length;j++){
                   var eleId=eleIds[j]+'-'+headRowIds[i]
                   if(eleId==`mn-sil-${headRowIds[i]}` || eleId==`mn-gold-${headRowIds[i]}`)
@@ -742,6 +949,61 @@
             }
         };
         input.oninput();
+        // ------------------------
+
+
+        // mobile pricing table --------
+
+        var i = document.getElementById('inp');
+        var o = document.getElementById('out');
+        i.oninput=function(){
+          o.innerHTML ='<img src="./assets/pricing/car.png" alt="car">'+values[this.value];
+          var marginBtn=this.value*25 
+            o.style.marginLeft=`${marginBtn}%`
+           
+            for(var i=0;i<4;i++){
+
+              if(this.value==i){
+                document.getElementById(`mob-${headRowIds[i]}`).style.display="initial"
+              var btns=document.querySelectorAll(".dur")
+                for(var k=0;k<btns.length;k++){
+                  if(k%3==0)
+                  btns[k].className="dur active"
+                  else
+                  btns[k].className="dur"
+                }
+              
+            }
+            else{
+                document.getElementById(`mob-${headRowIds[i]}`).style.display="none"
+              }
+          }
+        }
+        i.oninput();
+
+        function handleUpdateMob(a,b,c){
+
+          var btns=document.querySelectorAll(".dur")
+          for(var i=0;i<btns.length;i++){
+            if(event.target!==btns[i]){
+              btns[i].className="dur"
+            }
+          }
+          event.target.classList.add("active")
+
+          for(var i=0;i<eleIds.length;i++){
+            var el=eleIds[i]+'-'+c
+            if((a+'-'+c)==el || (b+'-'+c)==el){
+              document.getElementById(el).style.display="initial"
+            }
+            else{
+              document.getElementById(el).style.display="none"
+            }
+          }
+        }
+     
+
+
 
 </script>
 </body>
