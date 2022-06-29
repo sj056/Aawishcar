@@ -10,6 +10,19 @@
     width: 100%;
     height: 225px;
 }
+.pointers>div>img{
+    height: 15px;
+    width: 15px;
+}
+.pointers{
+    width: 80%;
+}
+.pointers>div{
+    position: absolute;
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+}
 .pricing-header{
     display: flex;
     flex-direction: column;
@@ -63,7 +76,7 @@
     margin-right: 0.4rem;
     height: 15px;
 }
-.range-slider>div{
+.range-slider>#output{
     background: #0CBF0C;
     border-radius: 4px;
     width: fit-content;
@@ -371,6 +384,7 @@ margin-top: 0.4rem;
     margin-bottom: 3rem;
 }
 .faqs>.faq{
+    cursor: pointer;
     font-weight: 500;
     font-size: 17px;
     line-height: 28px;
@@ -549,6 +563,34 @@ input[type=range]::-webkit-slider-thumb {
 .mob-pricing-table>table>tbody>tr{
     border-bottom: 0.692592px solid #CBCBCB;
 }
+
+input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 15px;
+    background: #0CBF0C40;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+    background: white;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    z-index: 1;
+    position: relative;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
 
 @media screen and (max-width:900px) {
 .desk,

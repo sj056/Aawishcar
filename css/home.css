@@ -19,6 +19,7 @@
     font-size: 0.9rem;
     letter-spacing: -0.04em;
     font-weight: 400;
+    text-transform: uppercase;
 
 }
 .upperStrip>.white{
@@ -238,6 +239,9 @@ text-align: center;
 .highlights>.container>.row>.col>h6{
     margin-top: 10px;
 }
+.green{
+    color: var(--neonGreen);
+}
 .reviews{
     display: flex;
     flex-direction: column;
@@ -276,58 +280,61 @@ text-align: center;
 .splide__pagination{
     display: none;
 }
-.review-card-green,.review-card-black{
+.review-card-blue,.review-card-black{
     border-radius: 8px;
     padding: 40px 24px;
     color: white;
     max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.review-card-green{
+.review-card-blue{
 background: #0045B5;
 }
 .review-card-black{
     background: black;
 }
-.review-card-green>.stars,
+.review-card-blue>.stars,
 .review-card-black>.stars{
     margin-bottom: 8px;
 }
 .review-card-black>.stars>img,
-.review-card-green>.stars>img{
+.review-card-blue>.stars>img{
     height: 14px;
     width: auto;
 }
 .review-card-black>p,
-.review-card-green>p{
+.review-card-blue>p{
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
 }
 .review-card-black>.profile,
-.review-card-green>.profile{
+.review-card-blue>.profile{
     display: flex;
 }
-.review-card-green>.profile>img,
+.review-card-blue>.profile>img,
 .review-card-black>.profile>img{
     height: 60px;
     width: 60px;
     border-radius: 100%;
 }
-.review-card-green>.profile>div,
+.review-card-blue>.profile>div,
 .review-card-black>.profile>div{
 margin-left: 1rem;
 margin-top: 0.4rem;
 }
-.review-card-green>.profile>div>h6,
+.review-card-blue>.profile>div>h6,
 .review-card-black>.profile>div>h6{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
 }
-.review-card-green>.profile>div>p,
+.review-card-blue>.profile>div>p,
 .review-card-black>.profile>div>p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 13px;
     margin: 0;
 }
@@ -367,7 +374,7 @@ margin-top: 0.4rem;
     color: white;
     line-height: 45px;
 }
-.gallery>button{
+.gallery>a{
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.02em;
@@ -379,13 +386,17 @@ margin-top: 0.4rem;
     border: 1.3px solid #FFFFFF;
     height: 50px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.gallery>button:hover{
+.gallery>a:hover{
     background: white;
     color: black;
 }
-.gallery>button:focus,
-.gallery>button:focus-visible{
+.gallery>a:focus,
+.gallery>a:focus-visible{
 outline: none;
 }
 footer{
@@ -404,7 +415,7 @@ footer>div>.row>.col2>p{
 footer>div>.row>.c1{
     padding: 0;
 }
-footer>div>.row>.col2>.socialicons>img{
+footer>div>.row>.col2>.socialicons>a>img{
     margin-right: 1rem;
 }
 footer>div>.row>.col2>.links{

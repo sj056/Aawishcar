@@ -93,12 +93,15 @@
     align-items: flex-start;
     flex-flow: wrap;
 }
-.form>form>div>label{
+.form>form>div>label,
+#on-demand>div>label{
     font-weight: 600;
     font-size: 15px;
 }
 .form>form>div>input,
-.form>form>div>select{
+.form>form>div>select,
+#on-demand>div>input,
+#on-demand>div>select{
     background: #FFFFFF;
     border-radius: 8px;
     border: none;
@@ -123,7 +126,8 @@
     width: 125px;
     margin: 1.4rem 0;
 }
-.form>form>.form-group{
+.form>form>.form-group,
+#on-demand>.form-group{
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -137,6 +141,11 @@
     outline: none;
 }
 
+#on-demand{
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width:900px) {
     .aboutDemo>.heading{

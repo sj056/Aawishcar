@@ -18,6 +18,7 @@
     justify-content: space-between;
     font-style: italic;
     padding: 0.3rem 0.4rem;
+    text-transform: uppercase;
 }
 .upperStrip>h6{
     font-size:0.9rem;

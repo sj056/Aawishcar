@@ -15,11 +15,9 @@
 </head>
 <body>
   <Section class="section upperStrip d-flex">
-    <h6 >BOOK A FREE DEMO ON +91-8757755666</h6>
-    <h6 class="white">AWISHCAR CURRENTLY AVAILABLE IN DELHI NCR</h6>
-    <h6 class="desk">DID YOU KNOW? We wash car using only two-three liters of water</h6>
-    <h6 class="white desk tab">JOIN 1,000+ HAPPY CUSTOMERS </h6>
-
+    <h6>Book a free demo on +91-7838979797</h6>
+        <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
+        <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
 </Section>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
@@ -87,15 +85,13 @@
     <section class="contactUs d-flex">
         <div class="details d-flex flex-column">
             <h3>Contact Us</h3>
-            <p>Our team is happy to book your demo. Fill out the form or call us and we’ll be touch as soon as possible.</p>
-            <p>Phone number: +91-864784XXXX</p>
-            <p>Email address: aawishcar@gmail.com</p>
-            <p>Address: 2715 Iffco Chowk, Gurgoan, Haryana, India</p>
+            <p>Have a query about AawishCar? Fill out the form or call us and we will get in touch with you ASAP.</p>
+            <p>Phone number: +91-7838979797</p>
+            <p>Email address:  awishcar06@gmail.com</p>
+            <p>Address: Gurgaon, Haryana, India</p>
             <p>Social media:</p>
             <div class="socialicons d-flex text-center py-1">
-                <img src="./assets/Twitter.png" alt="twitter">
-                <img src="./assets/Instagram.png" alt="insta">
-                <img src="./assets/LinkedIn.png" alt="LinkedIn">
+              <a href="https://instagram.com/teamaawishcar?igshid=YmMyMTA2M2Y"><img src="./assets/Instagram.png" alt="insta"></a>
             </div>
         </div>
    
@@ -106,10 +102,7 @@
                 <label for="name">Name <span class="important">*</span></label>
                 <input type="text" placeholder="Name" name="Name" id="name" required>
             </div>
-            <div class="form-group">
-                <label for="Location">Location <span class="important">*</span></label>
-                <input type="text" placeholder="Location" name="Location" id="location" required>
-            </div>
+            
              <div class="form-group">
                 <label for="Phone number">Phone number <span class="important">*</span></label>
                 <input type="text" placeholder="Phone number" name="Phone number" id="Phone number" required>
@@ -118,24 +111,52 @@
                 <label for="email">Email address <span class="important">*</span></label>
                 <input type="email" placeholder="Email" name="email" id="email" required>
             </div>
+ 
             <div class="form-group">
-                <label for="name">Car type <span class="important">*</span></label>
-                <select name="type" id="type">
-                    <option value="" disabled selected class="disabled-option">Type</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                </select>
+              <label for="name">Services <span class="important">*</span></label>
+              <select name="type" id="type" onchange="handleSelectServices(event)">
+                  <option value="" disabled selected class="disabled-option">Services</option>
+                  <option value="Daily Car Cleaning">Daily Car Cleaning</option>
+                  <option value="Detailing">Detailing</option>
+                  <option value="Ceramic Coating">Ceramic Coating</option>
+                  <option value="Paint Protection Film">Paint Protection Film</option>
+                  <option value="Wrapping">Wrapping</option>
+                  <option value="Wash Vacuum">Wash Vacuum</option>
+                  <option value="Dent Paint">Dent Paint</option>
+
+              </select>
             </div>
-            <div class="form-group ">
-                <label for="name">Time slots<span class="important">*</span></label>
-                <select name="slot" id="timeslot">
-                    <option value="" disabled selected class="disabled-option">Time slots</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                </select>
+
+            <div id="on-demand">
+              <div class="form-group">
+                <label for="Location">Location <span class="important">*</span></label>
+                <input type="text" placeholder="Location" name="Location" id="location" required>
+              </div>
+              <div class="form-group">
+                  <label for="name">Car type <span class="important">*</span></label>
+                  <select name="type" id="type">
+                      <option value="" disabled selected class="disabled-option">Type</option>
+                      <option value="Hatchback">Hatchback</option>
+                      <option value="Sedan/SUV Small">Sedan/SUV Small</option>
+                      <option value="Sedan/SUV Medium">Sedan/SUV Medium</option>
+                      <option value="Sedan/SUV Large">Sedan/SUV Large</option>
+                  </select>
+              </div>
+              <div class="form-group ">
+                  <label for="name">Time slots<span class="important">*</span></label>
+                  <select name="slot" id="timeslot">
+                      <option value="" disabled selected class="disabled-option">Time slots</option>
+                      <option value="5:00 AM - 5:30 AM">5:00 AM - 5:30 AM</option>
+                      <option value="6:00 AM - 6:30 AM">6:00 AM - 6:30 AM</option>
+                      <option value="7:00 AM - 7:30 AM">7:00 AM - 7:30 AM</option>
+                      <option value="8:00 AM - 8:30 AM">8:00 AM - 8:30 AM</option>
+                      <option value="9:00 AM - 9:30 AM">9:00 AM - 9:30 AM</option>
+                      <option value="10:00 AM - 10:30 AM">10:00 AM - 10:30 AM</option>
+
+                  </select>
+              </div>
             </div>
+            
             <button>Submit</button>
         </form>
     </div>
@@ -156,9 +177,7 @@
       <p>A wish for every car</p>
       
       <div class="socialicons d-flex text-center py-1">
-        <img src="./assets/Twitter.png" alt="twitter">
-        <img src="./assets/Instagram.png" alt="insta">
-        <img src="./assets/LinkedIn.png" alt="LinkedIn">
+        <a href="https://instagram.com/teamaawishcar?igshid=YmMyMTA2M2Y"><img src="./assets/Instagram.png" alt="insta"></a>
     </div>
   </div>
       <!-- Grid column -->
@@ -174,16 +193,15 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">About Us</a>
+            <a href="./about.html">About Us</a>
           </li>
           <li>
-            <a href="#!">Our Values</a>
+            <a href="./pricing.html">Pricing</a>
           </li>
           <li>
-            <a href="#!">The team</a>
+            <a href="./pricing.html">FAQs</a>
           </li>
           <li>
-            <a href="#!">Gallery</a>
           </li>
         </ul>
 
@@ -221,15 +239,15 @@
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!">+91-8757755666</a>
-              <p class="subline">9-5 pm mon-fri</p>
+              <a href="#!">+91-7838979797</a>
+              <p class="subline">9am to 6pm</p>
             </li>
             <li>
-              <a href="#!">info@awishcar.com</a>
+              <a href="mailto:awishcar06@gmail.com" title="Email"> awishcar06@gmail.com</a>
               <p class="subline">will reply in 24hrs</p>
             </li>
             <li>
-              <a href="#!">2715 Ash Dr. San Jose, Gurgoan, Haryana, India</a>
+              <a href="#!">Gurgoan, Haryana, India</a>
             </li>
           </ul>
   
@@ -300,6 +318,16 @@
           });
         })
        
+
+
+       function handleSelectServices(event){
+         if(event.target.value==='Daily Car Cleaning'){
+           document.getElementById("on-demand").style.display="none"
+         }
+         else{
+          document.getElementById("on-demand").style.display="flex"
+         }
+       }
 </script>
 </body>
 </html>
