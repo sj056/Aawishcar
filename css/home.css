@@ -9,6 +9,7 @@
     font-family: Inter, sans-serif;
     letter-spacing: -0.02rem;
 }
+
 .upperStrip{
     background: var(--yellow);
     justify-content: space-between;
@@ -542,6 +543,9 @@ footer>div>.row{
     }
 }
 @media screen and (max-width:650px){
+    .row{
+        width: 100%;
+    }
    nav{
     padding:0 1rem !important;
    }
