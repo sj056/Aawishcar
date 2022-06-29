@@ -544,7 +544,7 @@ footer>div>.row{
 }
 @media screen and (max-width:650px){
     .row{
-        width: 100%;
+        width: 100% !important;
     }
    nav{
     padding:0 1rem !important;
