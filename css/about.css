@@ -86,7 +86,7 @@ nav{
     margin-top: 4rem;
 }
 .about-us>.d-flex>.text{
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +175,7 @@ nav{
     font-size: 15px;
     line-height: 28px;
     color: #6B717E;
+    text-align: center;
 }
 .meet-the-team>.container>.row{
     margin: 2rem 0;
@@ -224,28 +225,28 @@ nav{
     padding: 0;
 }
 .featured-work>.r1>.row:nth-child(1)>.col:nth-child(1){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/YellowScooters 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img1.png");
 }
 .featured-work>.r1>.row:nth-child(1)>.col:nth-child(2){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/chris5 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img2.png");
 }
 .featured-work>.r1>.row:nth-child(2)>.col:nth-child(1){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/jeshoots-com-__ZMnefoI3k-unsplash 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img3.png");
 }
 .featured-work>.r1>.row:nth-child(2)>.col:nth-child(2){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/AdobeStock_313636079 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img4.png");
 }
 .featured-work>.r2>.row:nth-child(1)>.col:nth-child(1){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/pexels-kampus-production-7843950 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img5.png");
 }
 .featured-work>.r2>.row:nth-child(1)>.col:nth-child(2){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/Machine 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img6.png");
 }
 .featured-work>.r2>.row:nth-child(2)>.col:nth-child(1){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/jasper-doornbos-JCL16LNdP98-unsplash 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img7.png");
 }
 .featured-work>.r2>.row:nth-child(2)>.col:nth-child(2){
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/bekky-bekks-aWgaWj7Qv5Q-unsplash 1.png");
+    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%),url("../assets/about/gallery/img8.png");
 }
 footer{
     background: black;
@@ -279,6 +280,35 @@ footer>div>.row>.col2>ul>li>a{
     line-height: 27px;
     letter-spacing: -0.02em;
     color: #8F97A8;
+}
+footer .Bcard{
+    background: black;
+    color: white;
+    align-items: center;
+    border-radius: 8.09524px 0px 0px 8.09524px;
+    justify-content: center;
+    height: 56px;
+    padding-right: 3rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0;
+}
+footer .Bcard a{
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+footer .Bcard img{
+    margin-right: 0.7rem;
+}
+ footer .Bcard .content h6{
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+}
+ footer .Bcard .content h5{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
 }
 footer>div>.row>.col2>ul>li>.subline{
     text-transform: lowercase;

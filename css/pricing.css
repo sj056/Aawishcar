@@ -76,7 +76,12 @@
     margin-right: 0.4rem;
     height: 15px;
 }
-.range-slider>#output{
+.carNames{
+    width: 60%;
+    position: absolute;
+}
+.range-slider>#output,
+.carNames>div{
     background: #0CBF0C;
     border-radius: 4px;
     width: fit-content;
@@ -87,6 +92,36 @@
     line-height: 20px;
     margin-right: auto;
     margin-bottom: 0.6rem;
+}
+.carNames>div{
+    margin-right: 0;
+    opacity: 0.7;
+    
+}
+.carNames>#c1{
+    left: 4.8%;
+    position: absolute;
+    opacity: 0.7;
+}
+.carNames>#c2{
+    left: 29.8%;
+    opacity: 0.7;
+    position: absolute;
+}
+.carNames>#c3{
+    left: 55%;
+    opacity: 0.7;
+    position: absolute;
+}
+.carNames>#c4{
+    left: 80%;
+    opacity: 0.7;
+    position: absolute;
+}
+.carNames>div>img{
+    height: 12px;
+    margin-right: 3px;
+    margin-bottom: 2px;
 }
 .range-slider>input{
     width: 80%;
@@ -293,7 +328,7 @@ outline: none;
 .reviews>.container>.row{
     justify-content: space-between;
 }
-.s1{
+/* .s1{
     width: 100%;
 }
 .splide__slide{
@@ -374,7 +409,7 @@ margin-top: 0.4rem;
     bottom: -4rem;
     right: 2rem;
     width: 7.5rem;
-}
+} */
 .faqs{
     background: #1B1B1B;
     color: white;

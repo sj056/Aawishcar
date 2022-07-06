@@ -46,7 +46,7 @@
 .aboutDemo>.pointers>.d-flex{
     align-items: flex-start;
     width: 95%;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
 }
 .aboutDemo>.pointers>.d-flex>img{
     height: 20px;
@@ -54,7 +54,7 @@
     margin-top: 4px;
 }
 .aboutDemo>.pointers>.d-flex>h6{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.03em;
@@ -94,14 +94,14 @@
     flex-flow: wrap;
 }
 .form>form>div>label,
-#on-demand>div>label{
+#dailyCarWash>div>label{
     font-weight: 600;
     font-size: 15px;
 }
 .form>form>div>input,
 .form>form>div>select,
-#on-demand>div>input,
-#on-demand>div>select{
+#dailyCarWash>div>input,
+#dailyCarWash>div>select{
     background: #FFFFFF;
     border-radius: 8px;
     border: none;
@@ -127,7 +127,7 @@
     margin: 1.4rem 0;
 }
 .form>form>.form-group,
-#on-demand>.form-group{
+#dailyCarWash>.form-group{
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -141,7 +141,7 @@
     outline: none;
 }
 
-#on-demand{
+#dailyCarWash{
     display: none;
     width: 100%;
     flex-wrap: wrap;

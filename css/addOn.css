@@ -46,7 +46,7 @@
     width: 50%;
     color: white;
     background: #1B1B1B;
-    padding: 5rem;
+    padding: 4rem;
 }
 .services>section>.content>h4{
     font-weight: 600;
@@ -55,8 +55,8 @@
 }
 .services>section>.content>p{
     letter-spacing: -0.03em;
-    color: #6B717E;
-    font-size: 16px;
+    color: white;
+    font-size: 15px;
 }
 .services>section>.content>hr{
     border-top: 1px solid #3D3D3D;
@@ -89,8 +89,17 @@
 .splide__arrows{
     display: none;
 }
-
-
+.splide__slide img {
+    vertical-align: bottom;
+    width: 100%;
+}
+.splide__pagination {
+    margin-top: 2rem;
+    bottom: auto;
+}
+.splide__slide {
+    width: 100%;
+}
 @media screen and (max-width:900px) {
 
 .services>.options{

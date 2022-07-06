@@ -9,7 +9,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="./css/home.css">
 <link rel="stylesheet" href="./css/about.css">
 <link rel="stylesheet" href="./css/contact.css">
 </head>
@@ -127,7 +127,7 @@
               </select>
             </div>
 
-            <div id="on-demand">
+            <div id="dailyCarWash">
               <div class="form-group">
                 <label for="Location">Location <span class="important">*</span></label>
                 <input type="text" placeholder="Location" name="Location" id="location" required>
@@ -196,10 +196,13 @@
             <a href="./about.html">About Us</a>
           </li>
           <li>
-            <a href="./pricing.html">Pricing</a>
+            <a href="./pricing.html">Our Values</a>
           </li>
           <li>
-            <a href="./pricing.html">FAQs</a>
+            <a href="./pricing.html">The Team</a>
+          </li>
+          <li>
+            <a href="./pricing.html">Gallery</a>
           </li>
           <li>
           </li>
@@ -221,9 +224,6 @@
         <ul class="list-unstyled">
           <li>
             <a href="#!">Pricing</a>
-          </li>
-          <li>
-            <a href="#!">Blogs</a>
           </li>
           <li>
             <a href="#!">FAQ's</a>
@@ -256,10 +256,32 @@
       <!-- Grid column -->
 
     </div>
-    <!-- Grid row -->
 
+  <!-- </div> -->
+<div class="appInstallation">
+  <h4>Download our app</h4>
+  <div class="d-flex">
+    <div class="Bcard d-flex">
+      <a href="https://apps.apple.com/" class="d-flex" target="_blank">
+      <img src="./assets/appstore.png" alt="appstore">
+      <div class="content">
+        <h6>Download on the</h6>
+        <h5>App Store</h5>
+      </div>
+    </a>
+    </div>
+    <div class="Bcard d-flex">
+      <a href="https://play.google.com/store/apps/" class="d-flex" target="_blank">
+      <img src="./assets/playstore.png" height="30px" width="auto" alt="playstore">
+      <div class="content">
+        <h6>Get it on</h6>
+        <h5>Play Store</h5>
+      </div>
+    </a>
+    </div>
   </div>
-  <!-- Footer Links -->
+</div>
+ 
 
   <!-- Copyright -->
   <div class="footer-copyright py-3 d-flex flex-column">
@@ -322,10 +344,10 @@
 
        function handleSelectServices(event){
          if(event.target.value==='Daily Car Cleaning'){
-           document.getElementById("on-demand").style.display="none"
+           document.getElementById("dailyCarWash").style.display="flex"
          }
          else{
-          document.getElementById("on-demand").style.display="flex"
+          document.getElementById("dailyCarWash").style.display="none"
          }
        }
 </script>
