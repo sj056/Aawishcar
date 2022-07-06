@@ -697,11 +697,11 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width:650px){
     .mob-pricing-table>div>div>.pck{
-        padding: 0rem 0.1rem; 
+        padding: 0rem 0.4rem;
     padding-top: 1rem;
     }
     .pck>h5{
-        font-size: 17px;
+        font-size: 13px;
     }
     .blueBtn,
     .pck>.blackBtn{
@@ -709,7 +709,7 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 8px;
     }
     .pck>h6{
-        font-size: 12px;
+        font-size: 11px;
     }
     .pck>p{
         font-size: 8px;

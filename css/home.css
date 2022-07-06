@@ -610,6 +610,23 @@ footer .Bcard .content h5 {
     .navbar-brand>img{
         height: 34px;
     }
+
+    .Bcard{
+        border-radius: 8.09524px;
+        height: 47px;
+    padding: 0 1.5rem;
+    margin-bottom: 0.8rem;
+    }
+    .Bcard .content h6 {
+        font-size: 9px;
+    }
+    .Bcard .content h5 {
+        font-size: 16px;
+    }
+    .rightContainer {
+        margin-top: 2rem;
+        position:initial;
+    }
     .upperStrip{
         text-align: center;
     }

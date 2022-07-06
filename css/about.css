@@ -506,6 +506,7 @@ footer>div>.row{
     }
     .meet-the-team>.container>.row>.col{
         width: 100%;
+        margin-bottom: 2rem;
     }
     .featured-work>h1{
         font-size: 25px;
@@ -519,5 +520,8 @@ footer>div>.row{
         justify-content: flex-start;
         margin: 1rem 0;
 
+    }
+    footer .Bcard a {
+        margin-right: 2rem;
     }
 }
