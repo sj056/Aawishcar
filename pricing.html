@@ -15,12 +15,14 @@
 
 </head>
 <body>
-  <Section class="section upperStrip d-flex">
-    <h6>Book a free demo on +91-7838979797</h6>
-    <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
-    <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
-
-</Section>
+  <body>
+    <Section class="section upperStrip d-flex">
+      <div class="headings d-flex">
+        <h6>Book a free demo on +91-7838979797</h6>
+        <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
+        <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
+      </div>
+  </Section>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
 
@@ -31,10 +33,10 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarSupportedContent"> 
             <ul class="navbar-nav mr-auto d-flex">
               <li class="nav-item">
-                <a class="nav-link" href="./about.html"><button>About Awishcar</button></a>
+                <a class="nav-link" href="./about.html"><button>About Aawishcar</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./onDemandServices.html"><button>On-demand Services</button></a>
+                <a class="nav-link" href="./onDemandServices.html"><button>On-Demand Services</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pricing.html"><button>Pricing</button></a>
@@ -47,7 +49,7 @@
     </nav>
    
     <section class="header">
-        <img src="./assets/pricing/pricing banner 1.png" alt="header">
+        <img src="./assets/pricing/pricing-header.png" alt="header">
     </section>
     <section class="pricing-header">
         <h2>Pricing</h2>
@@ -105,7 +107,7 @@
                       <div class="duration d-flex">
                         <button class="dur active" onclick="handleUpdate('mn-sil-hatchback','mn-gold-hatchback')">Monthly</button>
                         <button class="dur" onclick="handleUpdate('qu-sil-hatchback','qu-gold-hatchback')">Quarterly</button>
-                        <button class="dur" onclick="handleUpdate('hy-sil-hatchback','hy-gold-hatchback')">Annually</button>
+                        <button class="dur" onclick="handleUpdate('hy-sil-hatchback','hy-gold-hatchback')">Half-Yearly</button>
                     </div>
                       <h5>Services</h5>
                     </th>
@@ -115,7 +117,7 @@
                     <th style="padding-top: 2.2rem;">
                         <div class="pck ">
                             <h6>Free Demo</h6>
-                            <h5>₹0/month</h5>
+                            <h5>₹0<span class="grey">/month</span></h5>
                             <p>For a hint to our services</p>
                             <button class="blackBtn">Get started for free</button>
                         </div>
@@ -148,7 +150,7 @@
                     <div class="duration d-flex">
                       <button class="dur active" onclick="handleUpdate('mn-sil-suv-small','mn-gold-suv-small')">Monthly</button>
                       <button class="dur" onclick="handleUpdate('qu-sil-suv-small','qu-gold-suv-small')">Quarterly</button>
-                      <button class="dur" onclick="handleUpdate('hy-sil-suv-small','hy-gold-suv-small')">Annually</button>
+                      <button class="dur" onclick="handleUpdate('hy-sil-suv-small','hy-gold-suv-small')">Half-Yearly</button>
                   </div>
                   <h5>Services</h5>
                   </th>
@@ -157,7 +159,7 @@
                   <th style="padding-top: 2.2rem;">
                       <div class="pck ">
                           <h6>Free Demo</h6>
-                          <h5>₹0/month</h5>
+                          <h5>₹0<span class="grey">/month</span></h5>
                           <p>For a hint to our services</p>
                           <button class="blackBtn">Get started for free</button>
                       </div>
@@ -190,7 +192,7 @@
                   <div class="duration d-flex">
                     <button class="dur active" onclick="handleUpdate('mn-sil-suv-medium','mn-gold-suv-medium')">Monthly</button>
                     <button class="dur" onclick="handleUpdate('qu-sil-suv-medium','qu-gold-suv-medium')">Quarterly</button>
-                    <button class="dur" onclick="handleUpdate('hy-sil-suv-medium','hy-gold-suv-medium')">Annually</button>
+                    <button class="dur" onclick="handleUpdate('hy-sil-suv-medium','hy-gold-suv-medium')">Half-Yearly</button>
                 </div>
                 <h5>Services</h5>
                 </th>
@@ -199,7 +201,7 @@
                 <th style="padding-top: 2.2rem;">
                     <div class="pck ">
                         <h6>Free Demo</h6>
-                        <h5>₹0/month</h5>
+                        <h5>₹0<span class="grey">/month</span></h5>
                         <p>For a hint to our services</p>
                         <button class="blackBtn">Get started for free</button>
                     </div>
@@ -232,7 +234,7 @@
                 <div class="duration d-flex">
                   <button class="dur active" onclick="handleUpdate('mn-sil-suv-large','mn-gold-suv-large')">Monthly</button>
                   <button class="dur" onclick="handleUpdate('qu-sil-suv-large','qu-gold-suv-large')">Quarterly</button>
-                  <button class="dur" onclick="handleUpdate('hy-sil-suv-large','hy-gold-suv-large')">Annually</button>
+                  <button class="dur" onclick="handleUpdate('hy-sil-suv-large','hy-gold-suv-large')">Half-Yearly</button>
               </div>
               <h5>Services</h5>
               </th>
@@ -315,7 +317,7 @@
                     <td class="desk"><img src="./assets/pricing/greenTick.png" alt="check"></td>
                 </tr>
                 <tr>
-                    <td>External Coat Application</td>
+                    <td>Dashboard & Seat Leather Conditioner</td>
                     <td class="durationBtn">
                         <button>Monthly</button>
                     </td>
@@ -830,24 +832,9 @@
           <!-- Grid column -->
           <div class="col2 col-md-2   c2">
     
-            <h5 class="links">About Awishcar</h5>
+         
     
-            <ul class="list-unstyled">
-              <li>
-                <a href="./about.html">About Us</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Our Values</a>
-              </li>
-              <li>
-                <a href="./pricing.html">The Team</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Gallery</a>
-              </li>
-              <li>
-              </li>
-            </ul>
+           
     
           </div>
 
@@ -864,10 +851,16 @@
     
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Pricing</a>
+                <a href="./about.html">About Aawishcar</a>
               </li>
               <li>
-                <a href="#!">FAQ's</a>
+                <a href="./contact.html">Book a demo</a>
+              </li>
+              <li>
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="./onDemandServices.html">On-Demand Services</a>
               </li>
             </ul>
     
@@ -926,13 +919,12 @@
 
       <!-- Copyright -->
       <div class="footer-copyright py-3 d-flex flex-column">
-          <div class="d-flex"><p>© Copyright Awishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
+          <div class="d-flex"><p>© Copyright Aawishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
       </div>
     
       <!-- Copyright -->
     
     </footer>
-      
       <script src="./js/croppie.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
       <script>

@@ -12,18 +12,25 @@
 
 .upperStrip{
     background: var(--yellow);
-    justify-content: space-between;
     font-style: italic;
     padding: 0.3rem 0.4rem;
+    justify-content: center;
+   overflow: hidden;
 }
-.upperStrip>h6{
+.upperStrip>.headings{
+    width: 100%;
+    justify-content: space-between;
+    animation: slide-left 20s linear infinite;
+
+}
+.upperStrip>.headings>h6{
     font-size: 0.9rem;
     letter-spacing: -0.04em;
     font-weight: 400;
     text-transform: uppercase;
 
 }
-.upperStrip>.white{
+.upperStrip>.headings>.white{
     color: white;
 }
 nav{
@@ -77,13 +84,19 @@ nav{
     padding-bottom: 8.6rem;
     padding-top: 3rem;
 }
+.heroHeader{
+    width: 100%;
+    background-image: linear-gradient(282.93deg,rgb(9 9 9 / 15%) 0.01%, rgb(0 0 0) 161.78%),url(../assets/heroheader.png);
+    background-size: cover;
+    height: 89vh;
+}
 .header>h5{
-    font-weight: 800;
-    font-size: 49px;
+    font-weight: 900;
+    font-size: 57px;
     line-height: 73px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: var(--yellow);
+    color: #FFC700;
 }
 
 
@@ -122,7 +135,7 @@ nav{
 }
 .bookADemo>input{
     background: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
     width: 320px;
     height: 48px;
@@ -135,14 +148,14 @@ nav{
 }
 .bookADemo>button{
     background: var(--yellow);
-    border-radius: 4px;
+    border-radius: 3px;
     border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.01em;
     color: #FFFFFF;
-    padding: 12px 21px;
+    padding: 14px 21px;
     margin-left: 10px;
 }
 .blueSection{
@@ -399,7 +412,8 @@ margin-top: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:linear-gradient(360deg, rgba(255, 210, 51, 0.3) -7.53%, rgba(255, 210, 51, 0.7) 161.78%), url("../assets/rowan-freeman-clYlmCaQbzY-unsplash\ 1.png"); 
+    background-image:url("../assets/ScootyImage.png"); 
+    background-size: cover;
     width: 100%;
     display: flex;
     height: 665px;
@@ -443,6 +457,10 @@ footer{
     padding: 6rem 5rem;
     padding-bottom: 0.1rem;
 }
+footer .col-md-2{
+    padding: 0;
+    margin: 0 1rem;
+}
 footer>div>.row>.col2>p{
     font-weight: 400;
     font-size: 14px;
@@ -485,6 +503,7 @@ footer>div>.row>.col2>ul>li>.subline{
     font-size: 14px;
     line-height: 150.6%;
     color: #8F97A8;
+    margin-left: auto;
 }
 .desktopFooterLogo{
 height: 17px;
@@ -502,14 +521,27 @@ footer>div>.row{
 
 footer .Bcard{
     padding-right: 3rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0rem;
     padding-left: 0;
 }
 
 footer .Bcard .content h5 {
     font-size: 19px;
 }
+/* animations */
+@keyframes slide-left {
+    from {
+      -webkit-transform:translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+}
 
+
+/* media queries */
 @media screen and (max-width:1000px) {
     .header>img{
         width: 80%;
@@ -519,8 +551,11 @@ footer .Bcard .content h5 {
     .upperStrip>.tab{
         display: none;
     }
-    .upperStrip>h6{
-        font-size: 0.6rem;
+    .upperStrip>.headings{
+        width: 270%;
+    }
+    .upperStrip>.headings>h6 {
+        font-size: 10px;
     }
     .header>h5{
         font-weight: 800;
@@ -612,7 +647,7 @@ footer .Bcard .content h5 {
     }
 
     .Bcard{
-        border-radius: 8.09524px;
+        border-radius: 8.09524px !;
         height: 47px;
     padding: 0 1.5rem;
     margin-bottom: 0.8rem;
@@ -722,6 +757,21 @@ footer .Bcard .content h5 {
     .nav-link>button{
         font-size:13px;
         color: #6c6767;
+    }
+    footer .Bcard a {
+        margin-right: 2rem;
+    }
+    footer .Bcard{
+        border-radius: 8.09524px !;
+        height: 47px;
+    padding: 0 1.5rem;
+    margin-bottom: 0.8rem;
+    }
+    footer .Bcard .content h6 {
+        font-size: 9px;
+    }
+    footer .Bcard .content h5 {
+        font-size: 16px;
     }
 }
 @media  screen and (max-width:300px) {

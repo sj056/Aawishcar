@@ -10,15 +10,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="./css/about.css">
+<link rel="stylesheet" href="./css/home.css">
 <link rel="stylesheet" href="./css/addOn.css">
 </head>
 <body>
   <Section class="section upperStrip d-flex">
-    <h6>Book a free demo on +91-7838979797</h6>
-    <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
-    <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
-
+    <div class="headings d-flex">
+      <h6>Book a free demo on +91-7838979797</h6>
+      <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
+      <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
+    </div>
 </Section>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
@@ -30,10 +31,10 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarSupportedContent"> 
             <ul class="navbar-nav mr-auto d-flex">
               <li class="nav-item">
-                <a class="nav-link" href="./about.html"><button>About Awishcar</button></a>
+                <a class="nav-link" href="./about.html"><button>About Aawishcar</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./onDemandServices.html"><button>On-demand Services</button></a>
+                <a class="nav-link" href="./onDemandServices.html"><button>On-Demand Services</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pricing.html"><button>Pricing</button></a>
@@ -45,8 +46,8 @@
        </div>
     </nav>
    
-    <section class="header">
-        <img src="./assets/addOns/addOnHeader.png" alt="header">
+    <section class="contactheader">
+        <img src="./assets/addOns/onDemandHeader.png" width="100%" height="auto" alt="header">
     </section>
   
     <section class="addOns d-flex flex-column">
@@ -57,14 +58,14 @@
               <button id="CeramicBtn" onclick="handleAddon()">Ceramic Coating</button>
               <button id="PPFBtn" onclick="handleAddon()">Paint Protection Film(PPF)</button>
               <button id="WrappingBtn" onclick="handleAddon()">Wrapping</button>
-              <button id="WashVaccumBtn" onclick="handleAddon()">Wash Vacuum</button>
+              <button id="WashVaccumBtn" onclick="handleAddon()">Wash and Vacuum</button>
               <button id="DentPaintBtn" onclick="handleAddon()">Dent Paint</button>
           </div>
 
 
           <!-- detailing -->
           <section id="detailing">
-            <div class="splide s1">
+            <!-- <div class="splide s1">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -84,24 +85,25 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/detailing .png" alt="addon">
                 <div class="content">
                     <h4>Detailing</h4>
-                    <p>
-
-                      The aim of detailing is to make sure that your car looks as good as new when you take it out of the detailing workshop by removing the scratch and swirl marks on the car. The detailing process although does not involve paintwork and body repairs on the car. The process of detailing involves complete car restoration which includes: <br>
-                      1.Exteriors  <br>
-                      Exteriors detailing helps protect paint, glass and body parts from harmful UV rays, contaminants and damage stemmed from driving.  <br>
-                      2.Interior  <br>
-                      A deep detailed cleaning of interiors like seats/carpets, dashboard/AC Vents and Seat belts/boots is done. <br>
-                      3.Engine-Bay Detailing  <br>
-                      Engine dressing is applied to give it a nicely detailed finish.  <br>
-                      4.Alloys and Lugnuts Cleaning  <br>
-                      Alloys and lugnuts are removed and cleaned thoroughly to remove brake dust deposits that could be harmful for the alloys.  <br>
-                      5.Leather Conditioning  <br>
-                      Leather conditioners are applied on seats and other surface to prevent them from fading and give a nice satin finish. <br>
-
-                    </p>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Car detailing is the art and the craft of cleaning and restoring a vehicle to like-new condition.                       </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Car detailing services are much more precise and labor-intensive than getting a car wash. </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Detailing is a combination of various car care activities, ranging from restoration to decontamination, polishing to protection, performed concisely in order to bring the car in a better condition.                       </p>
+                    </div>
                     <hr>
                     <button>Contact Us</button>
                 </div>
@@ -109,7 +111,7 @@
 
            <!-- Ceramic Coating -->
            <section id="Ceramic">
-            <div class="splide s2">
+            <!-- <div class="splide s2">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -129,23 +131,25 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/CeramicCoating.png" alt="addon">
                 <div class="content">
                     <h4>Ceramic Coating</h4>
-                    <p>
-
-                      We get it: no matter how small, that first little nick hurts! And keeping an eye out for everyday road damage is the worst. Why not add a layer of Paint Protection Film? You’ll worry a lot less and enjoy driving a lot more. Our barely detectable PPFs are the smart, easy way to keep your factory or custom paint finish looking fresh and flawless for miles. <br>
-                      PPF is a permanent paint protection film which consists of an ultra thin polyurethane or polymer which when applied by a professional forms a transparent protective surface layer. It protects a cars clear coat as well as the paint beneath it. It protects your paint from: <br>
-                      1. Surface scratches <br>
-                      2. UV exposure<br>
-                      3. Hard water spots<br>
-                      4. Acid rain<br>
-                      5. Oxidation<br>
-                      6. Rock chip damage<br>
-                      7. Other harmful elements<br>
-                      The best attribute of PPF is its longevity. A professionally installed PPF should last anywhere between 5-10years depending on the quality of film, skill set of installer and area where installation is done.<br>
-
-                    </p>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Ceramic Coating is the magical potion for cars that everyone’s talking about. A polymer solution is applied to the exterior of a vehicle to protect it from external paint damage. Typically applied by hand, it blends with the paint of your car and creates an additional hydrophobic layer of protection. Due to this chemical bonding and creation of a new layer, the car’s factory paint job remains untouched.                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Ceramic coating, also sometimes called nano-ceramic coating, is a permanent or semi-permanent solution to your worries depending upon the coating and type of polymer used. </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Due to its chemically intrinsic properties, it does not break down in normal atmospheric conditions like rain or summer.</p>
+                    </div>
                     <hr>
                     
                     <button>Contact Us</button>
@@ -154,7 +158,7 @@
 
            <!-- PPF -->
            <section id="PPF">
-            <div class="splide s3">
+            <!-- <div class="splide s3">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -174,30 +178,35 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/paintprotection.png" alt="addon">
                 <div class="content">
                     <h4>Paint Protection Film (PPF)</h4>
-                    <p>
-                      We get it: no matter how small, that first little nick hurts! And keeping an eye out for everyday road damage is the worst. Why not add a layer of Paint Protection Film? You’ll worry a lot less and enjoy driving a lot more. Our barely detectable PPFs are the smart, easy way to keep your factory or custom paint finish looking fresh and flawless for miles.<br>
-                      PPF is a permanent paint protection film which consists of an ultra thin polyurethane or polymer which when applied by a professional forms a transparent protective surface layer. It protects a cars clear coat as well as the paint beneath it. It protects your paint from:<br>
-                      1. Surface scratches<br>
-                      2. UV exposure<br>
-                      3. Hard water spots<br>
-                      4. Acid rain<br>
-                      5. Oxidation<br>
-                      6. Rock chip damage<br>
-                      7. Other harmful elements<br>
-                      The best attribute of PPF is its longevity. A professionally installed PPF should last anywhere between 5-10years depending on the quality of film, skill set of installer and area where installation is done.<br>
-
-                    </p>
-                    <hr>           
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>PPF (Paint Protection Film) is a transparent film with self-healing properties that is applied to the car bodywork to protect it from scratches and small dents.
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>It is also known as Anti-Stone Film because it provides protection from pebbles and gravel, which can cause damage if splashed against the vehicle bodywork. Similarly, the film also provides protection from insects, resins and limescale, as it has high hydrophobic properties. The self-healing properties of the protective film allow it to self-heal by simply exposing it to the heat of the sun.</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>By applying PPF Protective Film to your car, you can protect the bodywork, keeping the vehicle looking new and preserving its value over time.
+                      </p>
+                    </div>
+                    <hr>      
                     <button>Contact Us</button>
                 </div>
           </section>
 
            <!-- Wrapping -->
            <section id="Wrapping">
-            <div class="splide s4">
+            <!-- <div class="splide s4">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -217,20 +226,29 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/wrapping.png" alt="addon">
                 <div class="content">
                     <h4>Wrapping</h4>
-                    <p>
-                      A vehicle vinyl wrap is a practice of completely or partially covering a vehicle’s original paint with a vinyl wrap of a different color, and sometimes the same color with a differing finish like a gloss or a matte. <br>
-                      Wrapping is a way of changing the look of your vehicle without the need for a potentially expensive paint respray. <br>
-                      Different finishes are available that include:<br>
-                      1. Matte<br>
-                      2. Metallic<br>
-                      3. Pearlescent or flip-flop style( change color as light moves) <br>
-                      4. Customized designs <br>
-                      In vinyl wrapping sky is the limit when it comes to customisation of wrap and It requires almost 2 days for its installation which depends on the size of car and complexity of body panels.<br>
-                    </p>
                     <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Car wrapping is a way of changing the look of your vehicle without the need for a complicated and potentially expensive paint respray.
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>It involves completely or partially covering your vehicle with a vinyl film. This film can be used to overlay the vehicle with a different colour or design, add a gloss or matte finish, or simply add a protective layer.
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>A car wrap may also be known as a paint wrap, colour change wrap or paint protection film.
+                      </p>
+                    </div>
+                    <hr>    
                     
                     <button>Contact Us</button>
                 </div>
@@ -238,7 +256,7 @@
 
           <!-- Wash Vaccum -->
           <section id="WashVaccum">
-            <div class="splide s5">
+            <!-- <div class="splide s5">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -258,23 +276,24 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/vaccum.png" alt="addon">
                 <div class="content">
-                    <h4>Wash Vacuum</h4>
-                    <p>
-                      We offer a quick car wash at your doorstep to give your car nice and clean look. Low pressure wash is done to clean the paint, glasses, plastic trims and alloys along with application of top coat for added protection. Interior vacuuming is done to remove dirt and gunk from carpets and mats. Some benefits of quick car wash: <br> 
-                      1. Save time<br>
-                      2. Save fuel <br>
-                      3. Effortless wash <br>
-                      4. Convenience <br>
-                      5. Added level of paint protection <br>
-                      6. Cost-effective <br>
-                      7. Sense of pride  <br>
-                      8. Delivered when urgently cleaning required <br>
-                      9. Mud, dirt, rain water, bug splatter, bird dropping has impurities that can damage the paint, this will blast away all those impurities in seconds....also when you go for a drive you will have confidence knowing your windshield, rear windows, side mirrors and tyres are clean and safe for your next trip. <br>
-
-                    </p>
+                    <h4>Wash and Vacuum</h4>
                     <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Our wash and Vacuum packages include a complete range of services right from basic car washing to detailed interior and upholstery cleaning, protective coating, antiviral and bacterial treatments, vacuuming and dashboard polishing.
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>Our quick doorstep wash and vacuum service promises to give your car the treatment it deserves!
+                      </p>
+                    </div>
+                    <hr>
+                   
                     
                     <button>Contact Us</button>
                 </div>
@@ -282,7 +301,7 @@
 
           <!-- Dent Paint -->
           <section id="DentPaint">
-            <div class="splide s6">
+            <!-- <div class="splide s6">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide ">
@@ -302,19 +321,28 @@
                     </li>
                   </ul>
                 </div>
-                </div>
+                </div> -->
+                <img src="./assets/addOns/dentpaint.png" alt="addon">
                 <div class="content">
                     <h4>Dent Paint</h4>
-                    <p>
-                      You are driving around town in your pristine car, when suddenly in a fleeting moment your pride and joy is struck, you check and it's the heart wrenching sight of the dent/scratch that just appeared on the car. The damaged panel is restored to its factory finish to give it a showroom condition finish. <br>
-                      The process involves a series of steps that include: <br>
-                      1. Surface preparation <br>
-                      2. Primer coat <br>
-                      3. Base coat <br>
-                      4. Clear coat <br>
-                      5. Polishing <br>
-
-                    </p>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>You are driving around town in your pristine car, when suddenly in a fleeting moment your pride and joy is struck, you check and it's the heart wrenching sight of a dent/scratch that just appeared on the car. 
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>The damaged panel is restored to its factory finish to give it a showroom condition finish. 
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                      <img src="./assets/addOns/onDemandPointer.png" alt="pointer">
+                      <p>The process involves a series of steps that include Surface preparation, Prime Coat, Base Coat, Clear Coat and Polishing
+                      </p>
+                    </div>
                     <hr>
                    
                     <button>Contact Us</button>
@@ -326,6 +354,137 @@
     </section>
      
  
+    <section class="reviews od-reviews">
+      <h4>Let’s hear it from our customers</h4>
+      <p>At Aawishcar we pride ourselves on the fact that we only trust a combination of the very best 
+        <br>materials and the most competent professionals to carry out your chosen service.</p>
+      <div class="splide s1">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide ">
+              <div class="review-card-white">
+                <div class="type">
+                  <p>Service: Ceramic Coating</p>
+                </div>
+                <div class="stars">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                </div>
+                <p>
+                  Great service at affordable prices :) Every car owner should give it a try. Cleaners are very punctual and are also good at their job. 
+                  Their service has definitely made my car better
+                </p>
+                <div class="profile">
+                    <img src="./assets/t1.png" alt="profile">
+                    <div >
+                      <h6>Charan</h6>
+                    <p>Mahindra Alturas Owner</p>
+                    </div>
+                </div>
+            </div>  
+            </li>
+            <li class="splide__slide">
+              <div class="review-card-black">
+                <div class="type">
+                  <p>Service: PPF</p>
+                </div>
+                <div class="stars">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                </div>
+                <p>
+                  I started with Aawishcar’s service a month ago and my car feels like a new one. 
+                  Clean and fresh all the time. Truly a wish for every car
+                </p>
+                <div class="profile">
+                    <img src="./assets/t2.png" alt="profile">
+                    <div >
+                      <h6>Rajesh Paul</h6>
+                    <p>Honda City Owner</p>
+                    </div>
+                </div>
+            </div>  
+            </li>
+          
+            <li class="splide__slide session-card">
+              <div class="review-card-white">
+                <div class="type">
+                  <p>Service: Detailing</p>
+                </div>
+                <div class="stars">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                    <img src="./assets/star.png" alt="star">
+                </div>
+                <p>
+                  Totally worth the money. I cannot think of anyone better than Aawishcar for daily car cleaning. 
+                  <br>Their rates are competitive and services up to the mark.
+                </p>
+                <div class="profile">
+                  <img src="./assets/t3.png" alt="profile">
+                    <div >
+                      <h6>Puneet Grover</h6>
+                    <p>Mahindra Thar Owner</p>
+                    </div>
+                </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+  </section>
+  
+
+  <section class="featured-work on-demand-gall">
+    <h1>Our featured works</h1>
+    <div class="row r1">
+      <div class="row">
+        <div class="col">
+            <!-- <img src="./assets/about/YellowScooters 1.png" alt="featured-work"> -->
+        </div>
+        <div class="col">
+            <!-- <img src="./assets/about/chris5 1.png" alt="featured-work"> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <!-- <img src="./assets/about/jeshoots-com-__ZMnefoI3k-unsplash 1.png" alt="featured-work"> -->
+        </div>
+        <div class="col">
+            <!-- <img src="./assets/about/AdobeStock_313636079 1.png" alt="featured-work"> -->
+        </div>
+      </div>
+        
+    </div>
+    <div class="row r2">
+      <div class="row">
+        <div class="col">
+            <!-- <img src="./assets/about/pexels-kampus-production-7843950 1.png" alt="featured-work"> -->
+        </div>
+        <div class="col">
+            <!-- <img src="./assets/about/Machine 1.png" alt="featured-work"> -->
+        </div>
+      </div>
+       <div class="row">
+        <div class="col">
+            <!-- <img src="./assets/about/jasper-doornbos-JCL16LNdP98-unsplash 1.png" alt="featured-work"> -->
+        </div>
+        <div class="col">
+            <!-- <img src="./assets/about/bekky-bekks-aWgaWj7Qv5Q-unsplash 1.png" alt="featured-work"> -->
+        </div>
+       </div>
+        
+    </div>
+</section>
+
 
     <footer class="page-footer font-small blue ">
 
@@ -355,24 +514,9 @@
           <!-- Grid column -->
           <div class="col2 col-md-2   c2">
     
-            <h5 class="links">About Awishcar</h5>
+         
     
-            <ul class="list-unstyled">
-              <li>
-                <a href="./about.html">About Us</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Our Values</a>
-              </li>
-              <li>
-                <a href="./pricing.html">The Team</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Gallery</a>
-              </li>
-              <li>
-              </li>
-            </ul>
+           
     
           </div>
 
@@ -389,10 +533,16 @@
     
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Pricing</a>
+                <a href="./about.html">About Aawishcar</a>
               </li>
               <li>
-                <a href="#!">FAQ's</a>
+                <a href="./contact.html">Book a demo</a>
+              </li>
+              <li>
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="./onDemandServices.html">On-Demand Services</a>
               </li>
             </ul>
     
@@ -451,7 +601,7 @@
 
       <!-- Copyright -->
       <div class="footer-copyright py-3 d-flex flex-column">
-          <div class="d-flex"><p>© Copyright Awishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
+          <div class="d-flex"><p>© Copyright Aawishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
       </div>
     
       <!-- Copyright -->
@@ -459,44 +609,31 @@
     </footer>
       <script src="./js/croppie.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
-      <script>
-      
-      
+<script>
 
-          new Splide( '.s1', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      new Splide( '.s2', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      new Splide( '.s3', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      new Splide( '.s4', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      new Splide( '.s5', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      new Splide( '.s6', {
-        perPage: 1,
-        perMove: 1,
-        autoplay:true
-      } ).mount();
-      var eleIds=['detailing','Ceramic','PPF','Wrapping','WashVaccum','DentPaint']
+if(window.innerWidth>"1020"){
+        new Splide( '.s1', {
+      perPage: 3,
+      perMove: 1,
+    } ).mount();
+      }
+      else if(window.innerWidth>"700"){
+        new Splide( '.s1', {
+      perPage: 2,
+      perMove: 1,
+    } ).mount();
+      }
+      else{
+      new Splide( '.s1', {
+      perPage: 1,
+      perMove: 1,
+    } ).mount();
+      }
+
+   
       function handleAddon(){
+        var eleIds=['detailing','Ceramic','PPF','Wrapping','WashVaccum','DentPaint']
         var ele=event.target.id.slice(0,event.target.value.length-3)
-        console.log(ele)
         for(var i=0;i<eleIds.length;i++){
           if(ele===eleIds[i]){
             document.getElementById(ele).style.display="flex"

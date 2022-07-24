@@ -15,10 +15,11 @@
 </head>
 <body>
   <Section class="section upperStrip d-flex">
-    <h6>Book a free demo on +91-7838979797</h6>
-    <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
-    <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
-
+    <div class="headings d-flex">
+      <h6>Book a free demo on +91-7838979797</h6>
+      <h6 class="desk">DID YOU KNOW? AawishCar saves approx. 2000 litres of water daily</h6>
+      <h6 class="white desk tab">Love your Car? If yes, Join AawishCar</h6>
+    </div>
 </Section>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand desktop" href="./home.html"><img src="assets/AAwishcar.png" height="auto" width="auto" alt="Awishcar"/></a>
@@ -30,10 +31,10 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarSupportedContent"> 
             <ul class="navbar-nav mr-auto d-flex">
               <li class="nav-item">
-                <a class="nav-link" href="./about.html"><button>About Awishcar</button></a>
+                <a class="nav-link" href="./about.html"><button>About Aawishcar</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./onDemandServices.html"><button>On-demand Services</button></a>
+                <a class="nav-link" href="./onDemandServices.html"><button>On-Demand Services</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pricing.html"><button>Pricing</button></a>
@@ -46,20 +47,23 @@
     </nav>
    
     <section class="header">
-        <img src="./assets/about/aboutusbanner 1.png" alt="header">
+        <img src="./assets/about/About Us Banner.png" alt="header">
     </section>
     <section class="about-us">
         <h2>About Us</h2>
         <div class="d-flex">
             <div class="text">
                 <h3>A culture of care and conviction.</h3>
-                <p>Awishcar is a company that believes in challenging the present state of how cars are being cleaned in our country. 
+                <p>Aawishcar is a company that believes in challenging the present state of how cars are being cleaned in our country. 
                     We believe in thinking differently and the way we challenge the current situation is by developing a process of cleaning the car which is good for environment, eco-friendly and provides employment to the people of India. 
                     We use finest range of products suitable for cars paint and are easy to use.
                     “We just happen to clean and maintain your car with total conviction and belief in what we do”</p>
             </div>
             <div class="img">
-                <img src="./assets/about/aboutheader.png" alt="about">
+              <div class="animation">
+                <img src="./assets/about/AboutB1.png" class="b1" alt="about">
+                <img src="./assets/about/AboutB2.png" class="b2" alt="about">
+              </div>
             </div>
         </div>
         <div class="d-flex yellow-bg">
@@ -88,7 +92,7 @@
                             <img src="./assets/about/Vector (4).png" alt="save-water">
                             <h5>Eco-Friendly</h5>
                         </div>
-                        <p>We commute on a battery operated vehicle resulting in no pollution at all.</p>
+                        <p>Our car heroes commute on battery operated vehicles resulting in no pollution at all.</p>
                     </li>
                     <li>
                         <div class="d-flex">
@@ -112,7 +116,6 @@
     </section>
     <section class="meet-the-team">
         <h1>Meet the team</h1>
-        <p>We are bunch of car enthusiast who care for their cars<br> and love to nerd out about them. </p>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -203,24 +206,9 @@
           <!-- Grid column -->
           <div class="col2 col-md-2   c2">
     
-            <h5 class="links">About Awishcar</h5>
+         
     
-            <ul class="list-unstyled">
-              <li>
-                <a href="./about.html">About Us</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Our Values</a>
-              </li>
-              <li>
-                <a href="./pricing.html">The Team</a>
-              </li>
-              <li>
-                <a href="./pricing.html">Gallery</a>
-              </li>
-              <li>
-              </li>
-            </ul>
+           
     
           </div>
 
@@ -237,10 +225,16 @@
     
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Pricing</a>
+                <a href="./about.html">About Aawishcar</a>
               </li>
               <li>
-                <a href="#!">FAQ's</a>
+                <a href="./contact.html">Book a demo</a>
+              </li>
+              <li>
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="./onDemandServices.html">On-Demand Services</a>
               </li>
             </ul>
     
@@ -299,35 +293,13 @@
 
       <!-- Copyright -->
       <div class="footer-copyright py-3 d-flex flex-column">
-          <div class="d-flex"><p>© Copyright Awishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
+          <div class="d-flex"><p>© Copyright Aawishcar Inc.</p><div></div><a href="#" class="privacyD">Privacy Policy</a></div>
       </div>
     
       <!-- Copyright -->
     
     </footer>
       <script src="./js/croppie.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
-      <script>
-      
-        console.log(window.innerWidth);
-        if(window.innerWidth>"1020"){
-          new Splide( '.s1', {
-        perPage: 3,
-        perMove: 1,
-      } ).mount();
-        }
-        else if(window.innerWidth>"700"){
-          new Splide( '.s1', {
-        perPage: 2,
-        perMove: 1,
-      } ).mount();
-        }
-        else{
-        new Splide( '.s1', {
-        perPage: 1,
-        perMove: 1,
-      } ).mount();
-        }
-</script>
+     
 </body>
 </html>

@@ -41,7 +41,7 @@
 }
 .aboutDemo>.pointers{
     width: 50%;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
 }
 .aboutDemo>.pointers>.d-flex{
     align-items: flex-start;
