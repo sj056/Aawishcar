@@ -13,7 +13,7 @@
 .upperStrip{
     background: var(--yellow);
     font-style: italic;
-    padding: 0.3rem 0.4rem;
+    padding: 0.5rem 0.4rem;
     justify-content: center;
    overflow: hidden;
 }
@@ -26,8 +26,9 @@
 .upperStrip>.headings>h6{
     font-size: 0.9rem;
     letter-spacing: -0.04em;
-    font-weight: 400;
+    font-weight: 800;
     text-transform: uppercase;
+    margin: 0;
 
 }
 .upperStrip>.headings>.white{
@@ -192,14 +193,13 @@ nav{
 }
 
 .whyAwishcar>.container>.row>.col{
-    justify-content: center;
     align-items: flex-start;
-    margin: 2rem;
+    margin: 1.7rem;
+    justify-content: flex-start;
 }
 .whyAwishcar>.container>.row>.col>img{
     height: auto;
     width: auto;
-    margin-bottom: 20px;
 }
 .whyAwishcar>.container>.row>.col>h5{
     font-weight: 700;

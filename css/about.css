@@ -62,7 +62,7 @@ nav{
     margin: 0;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 33px;
     line-height: 58px;
     text-align: center;
@@ -161,18 +161,19 @@ nav{
 }
 .about-us>.yellow-bg>.pointers>ul>li>.d-flex{
     margin-bottom: 0.4rem;
-    align-items: center;
+    align-items: flex-start;
 }
 .about-us>.yellow-bg>.pointers>ul>li>.d-flex>img{
     margin-right: 0.7rem;
+    margin-top: 0.4rem;
 }
-.about-us>.yellow-bg>.pointers>ul>li>.d-flex>h5{
+.about-us>.yellow-bg>.pointers>ul>li>.d-flex>div>h5{
     font-weight: 600;
     font-size: 19px;
     line-height: 30px;
     margin: 0;
 }
-.about-us>.yellow-bg>.pointers>ul>li>p{
+.about-us>.yellow-bg>.pointers>ul>li>.d-flex>div>p{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
