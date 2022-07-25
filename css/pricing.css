@@ -663,7 +663,13 @@ input[type="range"]::-webkit-slider-thumb {
     border: none;
     background: transparent;
   }
-
+  #mob-hatchback,
+  #mob-suv-small,
+  #mob-suv-medium,
+  #mob-suv-large,
+  .mob-table{
+      display: none;
+  }
   @media screen and (max-width:1116px)
 {
     .range-slider>#output, .carNames>div{
@@ -686,6 +692,10 @@ input[type="range"]::-webkit-slider-thumb {
 .mob-pricing-table{
     display: block;
 }
+#mob-hatchback,
+.mob-table{
+    display: block;
+}
 .mob-pricing-table>div>.duration{
     width: 50%;
     margin: auto;
@@ -693,7 +703,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 2rem;
 }
 .pck.greenBg{
-    padding-top: 0.6rem;
+    padding-top: 0.8rem;
 }
 .deskPricing{
     display: none !important;
