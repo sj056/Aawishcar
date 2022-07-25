@@ -30,7 +30,9 @@
     color: #0045B5;
     border-bottom: 2px solid #0045B5;
 }
-
+.services>section{
+    height: 90vh;
+}
 .services>section{
     display: none;
 }

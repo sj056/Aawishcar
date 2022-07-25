@@ -808,9 +808,11 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .range-slider>input{
         width: 100%;
+      
     }
     .mob-pricing-table>.range-slider{
         margin-left: 0%;
+        margin: auto;
     }
     .range-slider>div{
         font-size: 7px;
