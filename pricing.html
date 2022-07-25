@@ -389,10 +389,49 @@
            <div class="mob-pricing-table">
 
             <div class="range-slider mobPricing">
-              <div id="out">
+              <select name="carType" class="carType" style="background-image: url(./assets/pricing/mobCarTag.png);" onchange="handleClickMob(event)">
+                <option value="0" >
+                    <div id="C1">
+                        <!-- <img src="./assets/spot.png" onclick="handleClickMob(0)" alt="spot"> -->
+                        <div>
+                          <img src="./assets/pricing/car.png" alt="car">
+                          
+                          Hatchback
+                      </div>
+                    </div> 
+                </option>
+                <option value="1">
+                  <div id="C2">
+                    <!-- <img src="./assets/spot.png" onclick="handleClickMob(1)" alt="spot"> -->
+                    <div>
+                      <img src="./assets/pricing/car.png" alt="car">
+                      Sedan/SUV Small
+                    </div>
+                  </div>
+                </option>
+                <option value="2">
+                  <div id="C3">
+                    <!-- <img src="./assets/spot.png" onclick="handleClickMob(2)" alt="spot"> -->
+                    <div>
+                      <img src="./assets/pricing/car.png" alt="car">
+                    Sedan/SUV Medium
+                  </div>
+                    </div>
+                </option>
+                <option value="3">
+                  <div id="C4">
+                    <img src="./assets/spot.png" onclick="handleClickMob(3)" alt="spot">
+                    <div>
+                      <img src="./assets/pricing/car.png" alt="car">
+                      Sedan/SUV Large</div>
+                  </div>
+                </option>
+            </select>
+              <!-- <div id="out">
                 <img src="./assets/pricing/car.png" alt="car">Hatchback
               </div>
               <div class="carNames d-flex">
+                
                 <div id="C1">
                     <img src="./assets/spot.png" onclick="handleClickMob(0)" alt="spot">
                     <div>
@@ -400,8 +439,8 @@
                       Hatchback
                   
                   </div>
-                </div>
-                <div id="C2">
+                </div> -->
+                <!-- <div id="C2">
                   <img src="./assets/spot.png" onclick="handleClickMob(1)" alt="spot">
                   <div>
                     <img src="./assets/pricing/car.png" alt="car">
@@ -420,7 +459,7 @@
                     <div>
                       <img src="./assets/pricing/car.png" alt="car">
                       Sedan/SUV Large</div>
-                    </div>
+                    </div> -->
                 </div>
                 
               </div>
@@ -561,7 +600,7 @@
               </div>
              
            
-            <table>
+            <table class="mob-table">
               <tr style="    border-bottom: 1px solid;">
                 <th>
                   Services
@@ -609,7 +648,7 @@
                 
               </tr>
               <tr>
-                  <td>External Coat Application</td>
+                  <td>Dashboard & Seat Leather Conditioner</td>
                   <td></td>
                   <td class="durationBtn">
                       <button>Monthly</button>
@@ -1087,17 +1126,9 @@
         var o = document.getElementById('out');
 
 
-        function handleClickMob(val){
+        function handleClickMob(event){
 
-
-          var idofC=parseInt(val)+1
-          var idOfcar="C"+idofC
-          document.getElementById(idOfcar).style.display="none"
-
-          o.innerHTML ='<img src="./assets/pricing/car.png" alt="car">'+values[val];
-
-          var marginBtn=val*25 
-          o.style.marginLeft=`${marginBtn}%`
+          var val = event.target.value
 
             for(var i=0;i<4;i++){
               if(val==i){
@@ -1112,9 +1143,7 @@
             }
             else{
                 document.getElementById(`mob-${headRowIds[i]}`).style.display="none"
-                var idCar="C"+parseInt(i)+1
-                console.log(idCar)
-                document.getElementById(idCar).style.display="initial"
+             
               }
           }
         }
