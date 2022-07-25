@@ -685,6 +685,9 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 @media screen and (max-width:900px) {
+    .services{
+        padding: 0 0.9rem;
+    }
 .desk,
 .duration{
     display: none;
