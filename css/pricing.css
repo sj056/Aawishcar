@@ -162,8 +162,9 @@
     padding: 6px 0px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    width: 12.4rem;
+    width: 13.1rem;
     padding-left: 2.2rem;
+    border-right: 8px solid #0cbf0c;
 }
 .carType:focus-visible{
     outline: none;
@@ -241,7 +242,7 @@
     color: #FFFFFF;
     background: #003D28;
     border: none;
-    padding: 0.3rem 1.3rem;
+    padding: 0.3rem 1rem;
     border-radius: 3px;
 }
 .blueBtn{
@@ -251,7 +252,7 @@
     color: #FFFFFF;
     background: #0CBF0C;
     border: none;
-    padding: 0.3rem 1.3rem;
+    padding: 0.3rem 1rem;
     border-radius: 3px;
 }
 .pck>.rec{
@@ -771,18 +772,18 @@ input[type="range"]::-webkit-slider-thumb {
         width: 33.33%;
     }
     .pck>h5{
-        font-size: 13px;
+        font-size: 20px;
     }
     .blueBtn,
     .pck>.blackBtn{
-        padding: 0.3rem;
-        font-size: 8px;
+        padding: 0.3rem 1.2rem;
+        font-size: 9px;
     }
     .pck>h6{
         font-size: 11px;
     }
     .pck>p{
-        font-size: 8px;
+        font-size: 10px;
     }
     .mob-pricing-table>div>.duration{
         width: 100%;
@@ -837,5 +838,31 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .mob-pricing-table>table{
         margin-top: 1rem;
+    }
+}
+@media screen and (max-width:385px){
+    .pck>h5 {
+        font-size: 18px;
+    }
+    .pck>p {
+        font-size: 8px;
+    }
+    .blueBtn, .pck>.blackBtn {
+        padding: 0.3rem 0.4rem;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:325px){
+    .pck>h5 {
+        font-size: 14px;
+    }
+    .pck>p {
+        font-size: 7px;
+    }
+    .blueBtn, .pck>.blackBtn {
+        font-size: 8.5px;
+    }
+    .pck>h6 {
+        font-size: 9px;
     }
 }

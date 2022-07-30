@@ -346,8 +346,9 @@ margin-top: 0.4rem;
         height: 13rem;
     }
     .reviews{
-        padding: 35px 0;
+        padding: 35px 0.3rem;
         padding-bottom: 8rem;
+        position: relative;
     }
     .reviews>p {
         font-size: 12px;

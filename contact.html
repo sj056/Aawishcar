@@ -95,6 +95,9 @@
         </div>
    
     <div class="form">
+      <div id="status">
+        <h4>Message Sent!</h4>
+       </div>
         <form id="contactForm"
         method="POST">
             <div class="form-group">
@@ -129,11 +132,11 @@
             <div id="dailyCarWash">
               <div class="form-group">
                 <label for="Location">Location <span class="important">*</span></label>
-                <input type="text" placeholder="Location" name="Location" id="location" required>
+                <input type="text" placeholder="Location" name="Location" id="location">
               </div>
               <div class="form-group">
                   <label for="name">Car type <span class="important">*</span></label>
-                  <select name="type" id="type">
+                  <select name="type" id="type" >
                       <option value="" disabled selected class="disabled-option">Type</option>
                       <option value="Hatchback">Hatchback</option>
                       <option value="Sedan/SUV Small">Sedan/SUV Small</option>
@@ -158,6 +161,8 @@
             
             <button>Submit</button>
         </form>
+
+       
     </div>
 </section>
 <footer class="page-footer font-small blue ">
@@ -303,15 +308,24 @@
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+
+          document.getElementById("status").style.display="initial";
+          setTimeout(()=>{
+            document.getElementById("status").style.display="none";
+          },2000)
+
           var name=document.getElementById('name').value;
-          var loc=document.getElementById('location').value;
           var phn=document.getElementById('Phone number').value;
           var mail=document.getElementById('email').value;
-          var type=document.getElementById('type').value;
-          var time=document.getElementById('timeslot').value;
+          var services=document.getElementById('type').value;
 
+          if(services==="Daily Car Cleaning"){
 
-          var templateParams = {
+            var loc=document.getElementById('location').value;
+            var type=document.getElementById('type').value;
+            var time=document.getElementById('timeslot').value;
+
+            var templateParams = {
               name: name,
               loc:loc,
               phn:phn,
@@ -319,7 +333,22 @@
               type:type,
               time:time
           };
- 
+          emailjs.send('service_6vbjg5l', 'template_z0bldpm', templateParams, 'LoUkOqO-6sJ_xodK2')
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document
+        .getElementById("contactForm").reset();
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+
+          }
+          else{
+            var templateParams = {
+              name: name,
+              phn:phn,
+              mail:mail,
+          };
           emailjs.send('service_6vbjg5l', 'template_7ndfbw2', templateParams, 'LoUkOqO-6sJ_xodK2')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
@@ -328,16 +357,28 @@
           }, function(error) {
             console.log('FAILED...', error);
           });
+          }
+          
+          
         })
        
 
 
        function handleSelectServices(event){
          if(event.target.value==='Daily Car Cleaning'){
+           document.getElementById("location").setAttribute('required','');
+           document.getElementById("timeslot").setAttribute('required','');
+           document.getElementById("type").setAttribute('required','');
+
            document.getElementById("dailyCarWash").style.display="flex"
+
          }
          else{
           document.getElementById("dailyCarWash").style.display="none"
+          document.getElementById("location").removeAttribute('required','');
+           document.getElementById("timeslot").removeAttribute('required','');
+           document.getElementById("type").removeAttribute('required','');
+
          }
        }
 </script>
