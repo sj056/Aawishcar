@@ -55,7 +55,8 @@ nav{
     cursor: pointer;
 }
 .nav-link>button:focus,
-.nav-link>button:focus-visible{
+.nav-link>button:focus-visible,
+#phoneNumber:focus-visible{
     outline: none;
 }
 .book>button{

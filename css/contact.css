@@ -21,7 +21,7 @@
     font-weight: 600;
     font-size: 33px;
 }
-.aboutDemo>.heading>button,
+.aboutDemo>.heading>a,
 .bookBtnMob{
     background: #FFC700;
     border-radius: 4px;
@@ -110,7 +110,7 @@
     line-height: 16px;
     padding: 0.7rem;
     width: 100%;
-    color: #B0B4BD;
+    color: #43474f;
 }
 .form>form>button{
     background: #1B1B1B;
@@ -222,7 +222,7 @@
     padding: 0.6rem 1rem;
     font-size: 14px;
 }
-.aboutDemo>.heading>button{
+.aboutDemo>.heading>a{
     display: none;
 }
 }

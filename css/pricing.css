@@ -693,9 +693,10 @@ input[type="range"]::-webkit-slider-thumb {
 .duration{
     display: none;
 }
-.mob-pricing-table{
+ .mob-pricing-table{
     display: block;
 }
+
 #mob-hatchback,
 .mob-table{
     display: block;
@@ -712,6 +713,9 @@ input[type="range"]::-webkit-slider-thumb {
 .deskPricing{
     display: none !important;
 }
+/* .pricing-header>.deskPricing{
+    display: none !important;
+} */
 .range-slider>div{
     font-size: 10px;
 }

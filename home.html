@@ -50,8 +50,8 @@
     <section class="header heroHeader">
         <h5>Eco-Friendly, On-Demand 
             <br>Car Washing Delivered to you</h5>
-        <form class="bookADemo">
-            <input type="text" placeholder="Your 10-digit contact number" name="contact-no">
+        <form class="bookADemo" id="toContactPage" method="POST">
+            <input type="text" placeholder="Your 10-digit contact number" name="contact-no" id="phoneNumber">
             <button>Book a demo</button>
         </form>
       
@@ -408,6 +408,17 @@
         perMove: 1,
       } ).mount();
         }
+</script>
+<script type="text/javascript">
+  var frm= document.getElementById("toContactPage")
+  frm.addEventListener("submit", function (event) {
+   event.preventDefault();
+   var phn=document.getElementById('phoneNumber').value;
+   localStorage.setItem("phoneNum", phn);
+   window.location.href="contact.html#contactDiv"
+ })
+
+
 </script>
 </body>
 </html>
